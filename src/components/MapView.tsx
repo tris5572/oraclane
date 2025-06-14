@@ -1,4 +1,5 @@
-import Map, {
+import * as ReactMap from "react-map-gl/maplibre";
+import {
   FullscreenControl,
   GeolocateControl,
   NavigationControl,
@@ -8,7 +9,7 @@ import "maplibre-gl/dist/maplibre-gl.css";
 
 export function MapView() {
   return (
-    <Map
+    <ReactMap.Map
       initialViewState={{
         latitude: 35.7010742,
         longitude: 139.6499634,
@@ -20,6 +21,6 @@ export function MapView() {
       <NavigationControl />
       <FullscreenControl />
       <GeolocateControl />
-    </Map>
+    </ReactMap.Map>
   );
 }
