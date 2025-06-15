@@ -43,3 +43,43 @@ export type MergePoint = {
    */
   comments?: string[];
 };
+
+/**
+ * 分岐地点のデータ型
+ */
+export type BranchPoint = {
+  /**
+   * ラベル
+   */
+  label?: string;
+  /**
+   * 経度
+   */
+  longitude: number;
+  /**
+   * 緯度
+   */
+  latitude: number;
+  /**
+   * アイコンの上が向く角度 [deg]
+   *
+   * 指定した角度へ、時計回りに回転する
+   */
+  angle: number;
+  /**
+   * 車線の情報
+   *
+   * 各車線の配列であり、1つの車線に対して `←↖↑↗→` により分岐方向を指定する。
+   */
+  lanes: string[];
+  /**
+   * 道路の種類
+   * - `general`: 一般道 (省略時のデフォルト)
+   * - `toll`: 有料道路
+   */
+  kind?: "general" | "toll";
+  /**
+   * 地点に対するコメント
+   */
+  comments?: string[];
+};
