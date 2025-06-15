@@ -28,21 +28,23 @@ export function MergePointPin({ data, size = 40 }: Props) {
       <g transform={`rotate(${data.angle}, 50, 50)`}>
         {/* 背景 */}
         <path
-          d="M50,2 L98,50 L50,98 L2,50 z"
+          d="M50,2 L90,40 L90,70 L70,90 L30,90 L10,70 L10,40 z"
           fill="hsl(58, 100%, 70%)"
           stroke="hsl(58, 50%, 50%)"
           strokeWidth="4"
           strokeLinejoin="round"
         />
+        {/* 先端表示 */}
+        <path d="M50,2 L55,20 L45,20 z" fill="hsl(300, 100%, 70%)" />
         {/* 外側線 */}
         <g fill="none" stroke="hsl(0, 0%, 0%)" strokeWidth="4">
           {data.merge === "right" ? (
-            <path d="M35,75 L35,55 L50,40 L50,25" />
+            <path d="M35,75 L35,55 L48,45 L48,25" />
           ) : (
             <path d="M35,75 L35,25" />
           )}
           {data.merge === "left" ? (
-            <path d="M65,75 L65,55 L50,40 L50,25" />
+            <path d="M65,75 L65,55 L52,45 L52,25" />
           ) : (
             <path d="M65,75 L65,25" />
           )}
@@ -52,6 +54,13 @@ export function MergePointPin({ data, size = 40 }: Props) {
           <path d="M50,75 L50,64" />
           <path d="M50,61 L50,50" />
         </g>
+        {/* 矢印 */}
+        {/* <path
+          d="M50,0 L55,10 L52,10 L52,20 L48,20 L48,10 L45,10 z"
+          fill="hsl(58, 50%, 50%)"
+          stroke="none"
+          transform={`translate(${data.merge === "right" ? 6 : -6} 30)`}
+        /> */}
       </g>
     </svg>
   );
