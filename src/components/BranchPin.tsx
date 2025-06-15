@@ -18,6 +18,9 @@ const SVG_STYLE: CSSProperties = {
 
 // TODO: 道路の種類に応じて色を変える
 
+const LANE_WIDTH = 46;
+const X_SCALE = 0.8;
+
 /**
  * 車線減少を表すピン
  */
@@ -33,13 +36,25 @@ export function BranchPin({ data, size = 40 }: Props) {
         strokeWidth="4"
         strokeLinejoin="round"
       />
-      {/* 先端表示 */}
-      <path d="M50,2 L55,20 L45,20 z" fill="hsl(300, 100%, 70%)" />
-      <g transform="translate(50,60)" fill="red">
+      <path d="M50,2 L55,20 L45,20 z" fill="hsl(300, 100%, 70%)" /> {/* 先端表示 */}
+      {/* 各レーンの情報。数に応じて横方向に縮小する */}
+      <g
+        transform={`translate(${LANE_WIDTH / 4}, 60) scale(${2 < data.lanes.length ? (2 * X_SCALE) / data.lanes.length : X_SCALE}, 1)`}
+      >
+        <path d="M0,-25 l0,50" stroke="hsl(0, 0%, 100%)" strokeWidth={4} /> {/* 左端の線 */}
         {data.lanes.map((lane, index) => (
-          // biome-ignore lint/suspicious/noArrayIndexKey: 静的データを元にしていてインデックスが変化することはないため問題ない
-          <g key={`${lane}-${index}`} transform={`translate(${-10 + index * 20})`}>
+          <g
+            // biome-ignore lint/suspicious/noArrayIndexKey: 静的データを元にしていてインデックスが変化することはないため問題ない
+            key={`${lane}-${index}`}
+            transform={`translate(${LANE_WIDTH / 2 + index * LANE_WIDTH})`}
+          >
             {arrowPath(lane)}
+            {/* 車線間の線。最後は右端なので太くする */}
+            <path
+              d={`M${LANE_WIDTH / 2},-25 l0,50`}
+              stroke="hsl(0, 0%, 100%)"
+              strokeWidth={index === data.lanes.length - 1 ? 4 : 2}
+            />{" "}
           </g>
         ))}
       </g>
