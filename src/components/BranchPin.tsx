@@ -35,7 +35,7 @@ export function BranchPin({ data, size = 40 }: Props) {
       />
       {/* 先端表示 */}
       <path d="M50,2 L55,20 L45,20 z" fill="hsl(300, 100%, 70%)" />
-      <g transform="translate(50,50)" fill="red">
+      <g transform="translate(50,60)" fill="red">
         {data.lanes.map((lane, index) => (
           // biome-ignore lint/suspicious/noArrayIndexKey: 静的データを元にしていてインデックスが変化することはないため問題ない
           <g key={`${lane}-${index}`} transform={`translate(${-10 + index * 20})`}>
@@ -55,8 +55,6 @@ export function BranchPin({ data, size = 40 }: Props) {
 function arrowPath(lane: string, color = "white") {
   const array = [];
 
-  // TODO: 斜めへの分岐を実装する
-
   // 直進が含まれる場合は、直進を中心に左右に伸ばす
   if (lane.includes("↑")) {
     array.push(<path d="M0,-20 L8,-10 L-8,-10 z" />);
@@ -70,9 +68,17 @@ function arrowPath(lane: string, color = "white") {
       array.push(<path d="M10,0 L20,8 L10,16 z" />);
       array.push(<path d="M0,8 l10,0" stroke={color} strokeWidth={4} />);
     }
+    if (lane.includes("↖")) {
+      array.push(<path d="M-15,-15 L-15,0 L-2,-10 z" />);
+      array.push(<path d="M-8,-5 L0,10 L0,20" fill="none" stroke={color} strokeWidth={4} />);
+    }
+    if (lane.includes("↗")) {
+      array.push(<path d="M15,-15 L15,0 L2,-10 z" />);
+      array.push(<path d="M8,-5 L0,10 L0,20" fill="none" stroke={color} strokeWidth={4} />);
+    }
   } else {
     // 直進が含まれない場合
-    // 右左折のみの場合（斜めがない場合）は、先端近くまで右左折を伸ばす
+    // 斜めがない場合（右左折のみの場合）は、先端近くまで右左折を伸ばす
     if (!lane.includes("↖") && !lane.includes("↗")) {
       if (lane.includes("←")) {
         array.push(<path d="M-10,-20 L-20,-10 L-10,0 z" />);
@@ -81,6 +87,26 @@ function arrowPath(lane: string, color = "white") {
       if (lane.includes("→")) {
         array.push(<path d="M10,-20 L20,-10 L10,0 z" />);
         array.push(<path d="M10,-10 l-10,0 l0,30" fill="none" stroke={color} strokeWidth={4} />);
+      }
+    } else {
+      // 斜め
+      if (lane.includes("↖")) {
+        array.push(<path d="M-15,-20 L-15,-5 L-2,-15 z" />);
+        array.push(<path d="M-8,-10 L0,0 l0,20" fill="none" stroke={color} strokeWidth={4} />);
+      }
+      if (lane.includes("↗")) {
+        array.push(<path d="M15,-20 L15,-5 L2,-15 z" />);
+        array.push(<path d="M8,-10 L0,0 l0,20" fill="none" stroke={color} strokeWidth={4} />);
+      }
+
+      // 斜めがある場合は、左右は下側
+      if (lane.includes("←")) {
+        array.push(<path d="M-10,0 L-20,8 L-10,16 z" />);
+        array.push(<path d="M0,8 l-10,0" stroke={color} strokeWidth={4} />);
+      }
+      if (lane.includes("→")) {
+        array.push(<path d="M10,0 L20,8 L10,16 z" />);
+        array.push(<path d="M0,8 l10,0" stroke={color} strokeWidth={4} />);
       }
     }
   }
