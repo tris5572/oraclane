@@ -53,6 +53,15 @@ const 東京 = [
     angle: 292,
     merge: "right",
   },
+  {
+    label: "国道20号 日野バイパス 国立府中IC",
+    longitude: 139.4385999,
+    latitude: 35.6757568,
+    angle: 270,
+    merge: "left",
+    multi: true,
+    comments: ["2車線→左に1車線追加で3車線→右車線が減って2車線、という謎の構造。"],
+  },
 ] satisfies MergePoint[];
 
 const 神奈川 = [
@@ -79,6 +88,14 @@ const 神奈川 = [
       "3車線→右に首都高が分岐する地点で左に車線が生えて4車線（ただし左車線は路駐だらけ）→右車線が予告もなく減少して3車線",
       "全体としては右1車線が減ることになるので、横浜方面からは左か中央の車線を走っておくのが良い。",
     ],
+  },
+  {
+    label: "根小屋",
+    longitude: 139.2753553,
+    latitude: 35.5743463,
+    angle: 245,
+    merge: "left",
+    comments: [],
   },
 ] satisfies MergePoint[];
 

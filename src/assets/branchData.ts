@@ -38,6 +38,54 @@ const 東京 = [
     lanes: ["↖", "→"],
     comments: [],
   },
+  {
+    label: "川崎街道 下り 一ノ宮",
+    longitude: 139.438718,
+    latitude: 35.6514491,
+    angle: 280,
+    lanes: ["←", "↑→"],
+    comments: [],
+  },
+  {
+    label: "青梅街道 東青梅三丁目",
+    longitude: 139.2786196,
+    latitude: 35.7886131,
+    angle: 265,
+    lanes: ["↖", "↗→"],
+    comments: ["メインの通りは左車線で、アンダーパスに入る。"],
+  },
+  {
+    label: "あきる野IC",
+    longitude: 139.2848477,
+    latitude: 35.7176583,
+    angle: 20,
+    lanes: ["↑", "→"],
+    comments: ["左車線が圏央道の入口。"],
+  },
+  {
+    label: "甲州街道 上り 矢川三丁目",
+    longitude: 139.4287106,
+    latitude: 35.6825183,
+    angle: 100,
+    lanes: ["↑", "→"],
+    comments: ["右車線が右折専用レーン。"],
+  },
+  {
+    label: "甲州街道 下り 高尾駅前",
+    longitude: 139.2819348,
+    latitude: 35.6430954,
+    angle: 225,
+    lanes: ["←", "↑→"],
+    comments: ["左車線が左折専用レーン。"],
+  },
+  {
+    label: "八王子南バイパス 下り 高尾山IC入口",
+    longitude: 139.2633873,
+    latitude: 35.6237606,
+    angle: 185,
+    lanes: ["↑", "→"],
+    comments: ["トンネルを抜けてすぐの交差点。", "右車線が2車線に分かれ、圏央道高尾山ICへ入る。"],
+  },
 ] satisfies BranchPoint[];
 
 const 神奈川 = [
@@ -59,6 +107,14 @@ const 神奈川 = [
       "この先、右車線は東名川崎ICに入るのみ。",
       "実際に東名に入る東名入口交差点で、左右両方の車線が2つに分岐して4車線になる。",
     ],
+  },
+  {
+    label: "新小倉橋",
+    longitude: 139.3006995,
+    latitude: 35.5882904,
+    angle: 75,
+    lanes: ["↖", "↑"],
+    comments: ["左車線は側道に入り、町田・コピオ方面。"],
   },
 ] satisfies BranchPoint[];
 
