@@ -138,5 +138,17 @@ function arrowPath(lane: string, color = "white") {
     }
   }
 
-  return <g fill={color}>{array}</g>;
+  // 左右両方への分岐がない場合、空いている方に少しずらす
+  const xShift =
+    (lane.includes("←") || lane.includes("↖")) && !lane.includes("→") && !lane.includes("↗")
+      ? 8
+      : (lane.includes("→") || lane.includes("↗")) && !lane.includes("←") && !lane.includes("↖")
+        ? -8
+        : 0;
+
+  return (
+    <g fill={color} transform={`translate(${xShift})`}>
+      {array}
+    </g>
+  );
 }
