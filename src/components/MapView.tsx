@@ -9,6 +9,8 @@ import "maplibre-gl/dist/maplibre-gl.css";
 import { MergePointPin } from "./MergePointPin";
 import { useMemo } from "react";
 import { DECREASE_DATA } from "../assets/mergeData";
+import { BRANCH_DATA } from "../assets/branchData";
+import { BranchPin } from "./BranchPin";
 
 export function MapView() {
   const decreaseMarkers = useMemo(
@@ -29,6 +31,24 @@ export function MapView() {
     [],
   );
 
+  const branchMarkers = useMemo(
+    () =>
+      BRANCH_DATA.map((data) => (
+        <ReactMap.Marker
+          key={`marker-${data.longitude}-${data.latitude}`}
+          longitude={data.longitude}
+          latitude={data.latitude}
+          anchor="center"
+          onClick={() => {
+            console.log("clicked");
+          }}
+        >
+          <BranchPin data={data} />
+        </ReactMap.Marker>
+      )),
+    [],
+  );
+
   return (
     <ReactMap.Map
       initialViewState={{
@@ -39,6 +59,7 @@ export function MapView() {
       mapStyle="https://tile.openstreetmap.jp/styles/osm-bright-ja/style.json"
     >
       {decreaseMarkers}
+      {branchMarkers}
       <ScaleControl />
       <NavigationControl />
       <FullscreenControl />
