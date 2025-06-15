@@ -1,35 +1,31 @@
 import type { CSSProperties } from "react";
+import type { DecreasePoint } from "../types/types";
 
 type Props = {
   /**
-   * 回転角度(deg)。時計回りに回転する。省略時は `0`
+   * 車線減少地点のデータ
    */
-  angle?: number;
+  data: DecreasePoint;
   /**
    * 大きさ。省略時は `40`
    */
   size?: number;
-  /**
-   * 減少する車線
-   * - `left`: 左車線が減少
-   * - `right`: 右車線が減少
-   */
-  decrease: "left" | "right";
-  // TODO: 背景色を変更可能にする
 };
 
 const SVG_STYLE: CSSProperties = {
   cursor: "pointer",
 };
 
+// TODO: 道路の種類に応じて色を変える
+
 /**
  * 車線減少を表すピン
  */
-export function PinDecrease({ angle = 0, size = 40, decrease }: Props) {
+export function PinDecrease({ data, size = 40 }: Props) {
   return (
     <svg height={size} viewBox="0 0 100 100" style={SVG_STYLE}>
-      <title>車線減少</title>
-      <g transform={`rotate(${angle}, 50, 50)`}>
+      <title>{data.label}</title>
+      <g transform={`rotate(${data.angle}, 50, 50)`}>
         {/* 背景 */}
         <path
           d="M50,2 L98,50 L50,98 L2,50 z"
@@ -40,12 +36,12 @@ export function PinDecrease({ angle = 0, size = 40, decrease }: Props) {
         />
         {/* 外側線 */}
         <g fill="none" stroke="hsl(0, 0%, 0%)" strokeWidth="4">
-          {decrease === "left" ? (
+          {data.merge === "right" ? (
             <path d="M35,75 L35,55 L50,40 L50,25" />
           ) : (
             <path d="M35,75 L35,25" />
           )}
-          {decrease === "right" ? (
+          {data.merge === "left" ? (
             <path d="M65,75 L65,55 L50,40 L50,25" />
           ) : (
             <path d="M65,75 L65,25" />
