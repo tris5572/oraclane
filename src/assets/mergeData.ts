@@ -1,4 +1,4 @@
-import type { DecreasePoint } from "../types/types";
+import type { MergePoint } from "../types/types";
 
 const 東京 = [
   {
@@ -13,7 +13,7 @@ const 東京 = [
       "手前のゲートシティ大崎付近は路駐が多いため、早めに左車線に寄るのもおすすめできない。",
     ],
   },
-] satisfies DecreasePoint[];
+] satisfies MergePoint[];
 
 const 神奈川 = [
   {
@@ -38,6 +38,6 @@ const 神奈川 = [
       "全体としては右1車線が減ることになるので、横浜方面からは左か中央の車線を走っておくのが良い。",
     ],
   },
-] satisfies DecreasePoint[];
+] satisfies MergePoint[];
 
-export const DECREASE_DATA = [...東京, ...神奈川] satisfies DecreasePoint[];
+export const DECREASE_DATA = [...東京, ...神奈川] satisfies MergePoint[];

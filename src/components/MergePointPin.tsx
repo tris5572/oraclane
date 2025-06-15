@@ -1,11 +1,11 @@
 import type { CSSProperties } from "react";
-import type { DecreasePoint } from "../types/types";
+import type { MergePoint } from "../types/types";
 
 type Props = {
   /**
    * 車線減少地点のデータ
    */
-  data: DecreasePoint;
+  data: MergePoint;
   /**
    * 大きさ。省略時は `40`
    */

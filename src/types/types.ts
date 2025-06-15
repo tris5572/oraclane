@@ -1,7 +1,7 @@
 /**
  * 車線減少地点のデータ型
  */
-export type DecreasePoint = {
+export type MergePoint = {
   /**
    * ラベル
    */
