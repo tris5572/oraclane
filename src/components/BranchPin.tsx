@@ -18,8 +18,8 @@ const SVG_STYLE: CSSProperties = {
 
 // TODO: 道路の種類に応じて色を変える
 
-const LANE_WIDTH = 46;
-const X_SCALE = 0.8;
+const LANE_WIDTH = 40;
+const X_SCALE = 0.9;
 
 /**
  * 車線減少を表すピン
@@ -37,9 +37,9 @@ export function BranchPin({ data, size = 40 }: Props) {
         strokeLinejoin="round"
       />
       <path d="M50,2 L55,20 L45,20 z" fill="hsl(300, 100%, 70%)" /> {/* 先端表示 */}
-      {/* 各レーンの情報。数に応じて横方向に縮小する */}
+      {/* 各レーンの情報。数に応じて横方向に縮小する。右下へのずらし量は目分量 */}
       <g
-        transform={`translate(${LANE_WIDTH / 4}, 60) scale(${2 < data.lanes.length ? (2 * X_SCALE) / data.lanes.length : X_SCALE}, 1)`}
+        transform={`translate(14, 60) scale(${2 < data.lanes.length ? (2 * X_SCALE) / data.lanes.length : X_SCALE}, 1)`}
       >
         <path d="M0,-25 l0,50" stroke="hsl(0, 0%, 100%)" strokeWidth={4} /> {/* 左端の線 */}
         {data.lanes.map((lane, index) => (
