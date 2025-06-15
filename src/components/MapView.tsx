@@ -6,7 +6,7 @@ import {
   ScaleControl,
 } from "react-map-gl/maplibre";
 import "maplibre-gl/dist/maplibre-gl.css";
-import { PinDecrease } from "./PinDecrease";
+import { MergePointPin } from "./MergePointPin";
 import { useMemo } from "react";
 import { DECREASE_DATA } from "../assets/mergeData";
 
@@ -23,7 +23,7 @@ export function MapView() {
             console.log("clicked");
           }}
         >
-          <PinDecrease data={data} />
+          <MergePointPin data={data} />
         </ReactMap.Marker>
       )),
     [],
