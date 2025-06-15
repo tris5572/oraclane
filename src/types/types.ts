@@ -27,6 +27,12 @@ export type MergePoint = {
    */
   merge: "left" | "right";
   /**
+   * 合流後が複数車線かどうかのフラグ
+   *
+   * 省略時は `false` とみなす
+   */
+  multi?: true;
+  /**
    * 道路の種類
    * - `general`: 一般道 (省略時のデフォルト)
    * - `toll`: 有料道路

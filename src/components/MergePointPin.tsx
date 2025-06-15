@@ -54,6 +54,20 @@ export function MergePointPin({ data, size = 40 }: Props) {
           <path d="M50,75 L50,64" />
           <path d="M50,61 L50,50" />
         </g>
+        {/* 複数車線 */}
+        {data.multi === true && (
+          <g
+            fill="none"
+            stroke="hsl(58, 50%, 40%)"
+            strokeWidth="3"
+            transform={`translate(${data.merge === "left" ? -7 : 7})`}
+          >
+            <path d="M50,75 L50,64" />
+            <path d="M50,61 L50,50" />
+            <path d="M50,47 L50,36" />
+            <path d="M50,33 L50,25" />
+          </g>
+        )}
         {/* 矢印 */}
         {/* <path
           d="M50,0 L55,10 L52,10 L52,20 L48,20 L48,10 L45,10 z"
