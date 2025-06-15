@@ -54,7 +54,7 @@ export function BranchPin({ data, size = 40 }: Props) {
               d={`M${LANE_WIDTH / 2},-25 l0,50`}
               stroke="hsl(0, 0%, 100%)"
               strokeWidth={index === data.lanes.length - 1 ? 4 : 2}
-            />{" "}
+            />
           </g>
         ))}
       </g>
