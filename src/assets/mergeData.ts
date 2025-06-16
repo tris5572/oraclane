@@ -1,5 +1,16 @@
 import type { MergePoint } from "../types/types";
 
+const 埼玉 = [
+  {
+    label: "東埼玉道路 下り. 八条白鳥",
+    longitude: 139.8294112,
+    latitude: 35.8515217,
+    angle: 345,
+    merge: "left",
+    comments: ["八条白鳥交差点で国道298号から入ったところ、最初は2車線だがすぐ1車線になる。"],
+  },
+] satisfies MergePoint[];
+
 const 東京 = [
   {
     label: "山手通り 大崎駅付近",
@@ -53,6 +64,15 @@ const 東京 = [
     angle: 292,
     merge: "right",
   },
+  {
+    label: "国道20号 日野バイパス 国立府中IC",
+    longitude: 139.4385999,
+    latitude: 35.6757568,
+    angle: 270,
+    merge: "left",
+    multi: true,
+    comments: ["2車線→左に1車線追加で3車線→右車線が減って2車線、という謎の構造。"],
+  },
 ] satisfies MergePoint[];
 
 const 神奈川 = [
@@ -80,6 +100,49 @@ const 神奈川 = [
       "全体としては右1車線が減ることになるので、横浜方面からは左か中央の車線を走っておくのが良い。",
     ],
   },
+  {
+    label: "国道1号 下り 花水橋",
+    longitude: 139.3283987,
+    latitude: 35.3226913,
+    angle: 230,
+    merge: "right",
+    comments: ["花水橋を渡ってすぐ1車線になる。"],
+  },
+  {
+    label: "国道134号 腰越海岸",
+    longitude: 139.489224,
+    latitude: 35.3083511,
+    angle: 90,
+    merge: "left",
+    comments: ["江の島の入口を越えたところで1車線になる。"],
+  },
+  {
+    label: "国道1号 下り 早川口",
+    longitude: 139.1488624,
+    latitude: 35.2463485,
+    angle: 250,
+    merge: "left",
+    comments: [
+      "早川口交差点を過ぎて線路をくぐるところで1車線になる。",
+      "手前の交差点では左折車が並んでいることがあるので、動きが難しい。",
+    ],
+  },
+  {
+    label: "国道16号側道 橋本五差路",
+    longitude: 139.343749,
+    latitude: 35.5869058,
+    angle: 335,
+    merge: "right",
+    comments: ["橋本五差路交差点の時点では2車線だが、すぐ1車線になる。"],
+  },
+  {
+    label: "根小屋",
+    longitude: 139.2753553,
+    latitude: 35.5743463,
+    angle: 245,
+    merge: "left",
+    comments: [],
+  },
 ] satisfies MergePoint[];
 
-export const DECREASE_DATA = [...東京, ...神奈川] satisfies MergePoint[];
+export const DECREASE_DATA = [...埼玉, ...東京, ...神奈川] satisfies MergePoint[];
