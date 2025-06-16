@@ -1,5 +1,25 @@
 import type { MergePoint } from "../types/types";
 
+const 北海道 = [] satisfies MergePoint[];
+
+const 青森 = [] satisfies MergePoint[];
+
+const 岩手 = [] satisfies MergePoint[];
+
+const 宮城 = [] satisfies MergePoint[];
+
+const 秋田 = [] satisfies MergePoint[];
+
+const 山形 = [] satisfies MergePoint[];
+
+const 福島 = [] satisfies MergePoint[];
+
+const 茨城 = [] satisfies MergePoint[];
+
+const 栃木 = [] satisfies MergePoint[];
+
+const 群馬 = [] satisfies MergePoint[];
+
 const 埼玉 = [
   {
     label: "東埼玉道路 下り. 八条白鳥",
@@ -10,6 +30,8 @@ const 埼玉 = [
     comments: ["八条白鳥交差点で国道298号から入ったところ、最初は2車線だがすぐ1車線になる。"],
   },
 ] satisfies MergePoint[];
+
+const 千葉 = [] satisfies MergePoint[];
 
 const 東京 = [
   {
@@ -153,4 +175,118 @@ const 神奈川 = [
   },
 ] satisfies MergePoint[];
 
-export const DECREASE_DATA = [...埼玉, ...東京, ...神奈川] satisfies MergePoint[];
+const 新潟 = [] satisfies MergePoint[];
+
+const 富山 = [] satisfies MergePoint[];
+
+const 石川 = [] satisfies MergePoint[];
+
+const 福井 = [] satisfies MergePoint[];
+
+const 山梨 = [] satisfies MergePoint[];
+
+const 長野 = [] satisfies MergePoint[];
+
+const 岐阜 = [] satisfies MergePoint[];
+
+const 静岡 = [] satisfies MergePoint[];
+
+const 愛知 = [] satisfies MergePoint[];
+
+const 三重 = [] satisfies MergePoint[];
+
+const 滋賀 = [] satisfies MergePoint[];
+
+const 京都 = [] satisfies MergePoint[];
+
+const 大阪 = [] satisfies MergePoint[];
+
+const 兵庫 = [] satisfies MergePoint[];
+
+const 奈良 = [] satisfies MergePoint[];
+
+const 和歌山 = [] satisfies MergePoint[];
+
+const 鳥取 = [] satisfies MergePoint[];
+
+const 島根 = [] satisfies MergePoint[];
+
+const 岡山 = [] satisfies MergePoint[];
+
+const 広島 = [] satisfies MergePoint[];
+
+const 山口 = [] satisfies MergePoint[];
+
+const 徳島 = [] satisfies MergePoint[];
+
+const 香川 = [] satisfies MergePoint[];
+
+const 愛媛 = [] satisfies MergePoint[];
+
+const 高知 = [] satisfies MergePoint[];
+
+const 福岡 = [] satisfies MergePoint[];
+
+const 佐賀 = [] satisfies MergePoint[];
+
+const 長崎 = [] satisfies MergePoint[];
+
+const 熊本 = [] satisfies MergePoint[];
+
+const 大分 = [] satisfies MergePoint[];
+
+const 宮崎 = [] satisfies MergePoint[];
+
+const 鹿児島 = [] satisfies MergePoint[];
+
+const 沖縄 = [] satisfies MergePoint[];
+
+export const DECREASE_DATA = [
+  ...北海道,
+  ...青森,
+  ...岩手,
+  ...宮城,
+  ...秋田,
+  ...山形,
+  ...福島,
+  ...茨城,
+  ...栃木,
+  ...群馬,
+  ...埼玉,
+  ...千葉,
+  ...東京,
+  ...神奈川,
+  ...新潟,
+  ...富山,
+  ...石川,
+  ...福井,
+  ...山梨,
+  ...長野,
+  ...岐阜,
+  ...静岡,
+  ...愛知,
+  ...三重,
+  ...滋賀,
+  ...京都,
+  ...大阪,
+  ...兵庫,
+  ...奈良,
+  ...和歌山,
+  ...鳥取,
+  ...島根,
+  ...岡山,
+  ...広島,
+  ...山口,
+  ...徳島,
+  ...香川,
+  ...愛媛,
+  ...高知,
+  ...福岡,
+  ...佐賀,
+  ...長崎,
+  ...熊本,
+  ...大分,
+  ...宮崎,
+  ...鹿児島,
+  ...沖縄,
+] satisfies MergePoint[];

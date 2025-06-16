@@ -2,6 +2,30 @@ import type { BranchPoint } from "../types/types";
 
 // ←↖↑↗→
 
+const 北海道 = [] satisfies BranchPoint[];
+
+const 青森 = [] satisfies BranchPoint[];
+
+const 岩手 = [] satisfies BranchPoint[];
+
+const 宮城 = [] satisfies BranchPoint[];
+
+const 秋田 = [] satisfies BranchPoint[];
+
+const 山形 = [] satisfies BranchPoint[];
+
+const 福島 = [] satisfies BranchPoint[];
+
+const 茨城 = [] satisfies BranchPoint[];
+
+const 栃木 = [] satisfies BranchPoint[];
+
+const 群馬 = [] satisfies BranchPoint[];
+
+const 埼玉 = [] satisfies BranchPoint[];
+
+const 千葉 = [] satisfies BranchPoint[];
+
 const 東京 = [
   {
     label: "内堀通り 外回り 祝田橋",
@@ -176,7 +200,121 @@ const 神奈川 = [
   },
 ] satisfies BranchPoint[];
 
+const 新潟 = [] satisfies BranchPoint[];
+
+const 富山 = [] satisfies BranchPoint[];
+
+const 石川 = [] satisfies BranchPoint[];
+
+const 福井 = [] satisfies BranchPoint[];
+
+const 山梨 = [] satisfies BranchPoint[];
+
+const 長野 = [] satisfies BranchPoint[];
+
+const 岐阜 = [] satisfies BranchPoint[];
+
+const 静岡 = [] satisfies BranchPoint[];
+
+const 愛知 = [] satisfies BranchPoint[];
+
+const 三重 = [] satisfies BranchPoint[];
+
+const 滋賀 = [] satisfies BranchPoint[];
+
+const 京都 = [] satisfies BranchPoint[];
+
+const 大阪 = [] satisfies BranchPoint[];
+
+const 兵庫 = [] satisfies BranchPoint[];
+
+const 奈良 = [] satisfies BranchPoint[];
+
+const 和歌山 = [] satisfies BranchPoint[];
+
+const 鳥取 = [] satisfies BranchPoint[];
+
+const 島根 = [] satisfies BranchPoint[];
+
+const 岡山 = [] satisfies BranchPoint[];
+
+const 広島 = [] satisfies BranchPoint[];
+
+const 山口 = [] satisfies BranchPoint[];
+
+const 徳島 = [] satisfies BranchPoint[];
+
+const 香川 = [] satisfies BranchPoint[];
+
+const 愛媛 = [] satisfies BranchPoint[];
+
+const 高知 = [] satisfies BranchPoint[];
+
+const 福岡 = [] satisfies BranchPoint[];
+
+const 佐賀 = [] satisfies BranchPoint[];
+
+const 長崎 = [] satisfies BranchPoint[];
+
+const 熊本 = [] satisfies BranchPoint[];
+
+const 大分 = [] satisfies BranchPoint[];
+
+const 宮崎 = [] satisfies BranchPoint[];
+
+const 鹿児島 = [] satisfies BranchPoint[];
+
+const 沖縄 = [] satisfies BranchPoint[];
+
 /**
  * 分岐箇所のデータ
  */
-export const BRANCH_DATA = [...東京, ...神奈川] satisfies BranchPoint[];
+export const BRANCH_DATA = [
+  ...北海道,
+  ...青森,
+  ...岩手,
+  ...宮城,
+  ...秋田,
+  ...山形,
+  ...福島,
+  ...茨城,
+  ...栃木,
+  ...群馬,
+  ...埼玉,
+  ...千葉,
+  ...東京,
+  ...神奈川,
+  ...新潟,
+  ...富山,
+  ...石川,
+  ...福井,
+  ...山梨,
+  ...長野,
+  ...岐阜,
+  ...静岡,
+  ...愛知,
+  ...三重,
+  ...滋賀,
+  ...京都,
+  ...大阪,
+  ...兵庫,
+  ...奈良,
+  ...和歌山,
+  ...鳥取,
+  ...島根,
+  ...岡山,
+  ...広島,
+  ...山口,
+  ...徳島,
+  ...香川,
+  ...愛媛,
+  ...高知,
+  ...福岡,
+  ...佐賀,
+  ...長崎,
+  ...熊本,
+  ...大分,
+  ...宮崎,
+  ...鹿児島,
+  ...沖縄,
+] satisfies BranchPoint[];
