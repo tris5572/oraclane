@@ -1,5 +1,16 @@
 import type { MergePoint } from "../types/types";
 
+const 埼玉 = [
+  {
+    label: "東埼玉道路 下り. 八条白鳥",
+    longitude: 139.8294112,
+    latitude: 35.8515217,
+    angle: 345,
+    merge: "left",
+    comments: ["八条白鳥交差点で国道298号から入ったところ、最初は2車線だがすぐ1車線になる。"],
+  },
+] satisfies MergePoint[];
+
 const 東京 = [
   {
     label: "山手通り 大崎駅付近",
@@ -90,6 +101,41 @@ const 神奈川 = [
     ],
   },
   {
+    label: "国道1号 下り 花水橋",
+    longitude: 139.3283987,
+    latitude: 35.3226913,
+    angle: 230,
+    merge: "right",
+    comments: ["花水橋を渡ってすぐ1車線になる。"],
+  },
+  {
+    label: "国道134号 腰越海岸",
+    longitude: 139.489224,
+    latitude: 35.3083511,
+    angle: 90,
+    merge: "left",
+    comments: ["江の島の入口を越えたところで1車線になる。"],
+  },
+  {
+    label: "国道1号 下り 早川口",
+    longitude: 139.1488624,
+    latitude: 35.2463485,
+    angle: 250,
+    merge: "left",
+    comments: [
+      "早川口交差点を過ぎて線路をくぐるところで1車線になる。",
+      "手前の交差点では左折車が並んでいることがあるので、動きが難しい。",
+    ],
+  },
+  {
+    label: "国道16号側道 橋本五差路",
+    longitude: 139.343749,
+    latitude: 35.5869058,
+    angle: 335,
+    merge: "right",
+    comments: ["橋本五差路交差点の時点では2車線だが、すぐ1車線になる。"],
+  },
+  {
     label: "根小屋",
     longitude: 139.2753553,
     latitude: 35.5743463,
@@ -99,4 +145,4 @@ const 神奈川 = [
   },
 ] satisfies MergePoint[];
 
-export const DECREASE_DATA = [...東京, ...神奈川] satisfies MergePoint[];
+export const DECREASE_DATA = [...埼玉, ...東京, ...神奈川] satisfies MergePoint[];
