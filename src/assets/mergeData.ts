@@ -128,6 +128,14 @@ const 神奈川 = [
     ],
   },
   {
+    label: "国道246号 下り 厚木",
+    longitude: 139.3538797,
+    latitude: 35.4293071,
+    angle: 230,
+    merge: "left",
+    comments: ["国道129号との分岐後、2車線になったと思うとすぐ1車線になる。"],
+  },
+  {
     label: "国道16号側道 橋本五差路",
     longitude: 139.343749,
     latitude: 35.5869058,
