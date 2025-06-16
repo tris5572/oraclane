@@ -189,7 +189,16 @@ const 長野 = [] satisfies MergePoint[];
 
 const 岐阜 = [] satisfies MergePoint[];
 
-const 静岡 = [] satisfies MergePoint[];
+const 静岡 = [
+  {
+    label: "国道246号 上り 菅沼",
+    longitude: 138.9505371,
+    latitude: 35.3485457,
+    angle: 30,
+    merge: "left",
+    comments: ["道の駅ふじおやまを過ぎ、菅沼交差点の先で1車線になる。"],
+  },
+] satisfies MergePoint[];
 
 const 愛知 = [] satisfies MergePoint[];
 
