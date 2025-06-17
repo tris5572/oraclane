@@ -6,11 +6,11 @@ import {
   ScaleControl,
 } from "react-map-gl/maplibre";
 import "maplibre-gl/dist/maplibre-gl.css";
-import { MergePointPin } from "./MergePointPin";
 import { useMemo } from "react";
-import { DECREASE_DATA } from "../assets/mergeData";
 import { BRANCH_DATA } from "../assets/branchData";
+import { DECREASE_DATA } from "../assets/mergeData";
 import { BranchPin } from "./BranchPin";
+import { MergePointPin } from "./MergePointPin";
 
 export function MapView() {
   const decreaseMarkers = useMemo(
