@@ -22,6 +22,76 @@ const 群馬 = [] satisfies MergePoint[];
 
 const 埼玉 = [
   {
+    label: "国道17号 上尾道路 下り 桶川北本IC",
+    longitude: 139.5216197,
+    latitude: 35.9977268,
+    angle: 330,
+    merge: "left",
+    comments: ["圏央道入口の右分岐を過ぎたところで1車線になる。"],
+  },
+  {
+    label: "国道17号 上尾道路 上り 道の駅べに花の郷おけがわ",
+    longitude: 139.5271853,
+    latitude: 35.9917906,
+    angle: 140,
+    merge: "left",
+    comments: ["道の駅を過ぎたところで1車線になる。"],
+  },
+  {
+    label: "国道17号 上尾道路 下り 小敷谷",
+    longitude: 139.5602167,
+    latitude: 35.9614516,
+    angle: 300,
+    merge: "left",
+  },
+  {
+    label: "国道16号 東大宮バイパス 内回り 県道3号合流手前",
+    longitude: 139.6270815,
+    latitude: 35.9603213,
+    angle: 230,
+    merge: "left",
+    comments: ["アンダーパスを上る途中で左車線へ絞り込み。"],
+  },
+  {
+    label: "県道3号 上り 国道16号合流手前",
+    longitude: 139.6266523,
+    latitude: 35.9599022,
+    angle: 230,
+    merge: "left",
+    comments: ["原市(中)交差点を過ぎたところで左車線へ絞り込み。"],
+  },
+  {
+    label: "国道17号 上尾道路 上り 宮前IC",
+    longitude: 139.5922744,
+    latitude: 35.9305006,
+    angle: 170,
+    merge: "left",
+    comments: [
+      "本来は少し先へ右車線へ減少するものの、現在は工事の関係で左車線へ絞り込み。直後、国道16号内回りからの合流の手前で右車線へ移動することになる。",
+    ],
+  },
+  {
+    label: "国道17号 新大宮バイパス 下り 与野",
+    longitude: 139.6123052,
+    latitude: 35.8902748,
+    angle: 330,
+    merge: "left",
+    multi: true,
+    comments: [
+      "工事の関係で車線構造が変わることがあるが、とりあえず直進の場合は左2車線に寄っておけば間違いない。",
+    ],
+  },
+  {
+    label: "国道16号 西大宮バイパス 外回り 宮前IC",
+    longitude: 139.5907187,
+    latitude: 35.9270338,
+    angle: 50,
+    merge: "right",
+    comments: [
+      "左に新大宮バイパス・上尾道路の分岐のあと、右に絞り込み。国道16号を直進する場合はあらかじめ右に寄っておくのが良い。",
+    ],
+  },
+  {
     label: "東埼玉道路 下り. 八条白鳥",
     longitude: 139.8294112,
     latitude: 35.8515217,
