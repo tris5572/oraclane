@@ -82,6 +82,17 @@ const 埼玉 = [
     lanes: ["↑", "→"],
     comments: ["戸田橋で荒川を渡ってすぐ、右車線が右折専用レーンになる。"],
   },
+  {
+    label: "国道463号 所沢入間バイパス 下り 国道16号手前",
+    longitude: 139.3835905,
+    latitude: 35.8222924,
+    angle: 270,
+    lanes: ["↖", "↑"],
+    comments: [
+      "右車線が国道463号直進でアンダーパスをくぐって飯能・秩父方面。",
+      "左車線が側道から小谷田交差点で国道16号と交差。",
+    ],
+  },
 ] satisfies BranchPoint[];
 
 const 千葉 = [] satisfies BranchPoint[];
