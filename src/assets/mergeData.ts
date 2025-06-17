@@ -1,6 +1,96 @@
 import type { MergePoint } from "../types/types";
 
+const 北海道 = [] satisfies MergePoint[];
+
+const 青森 = [] satisfies MergePoint[];
+
+const 岩手 = [] satisfies MergePoint[];
+
+const 宮城 = [] satisfies MergePoint[];
+
+const 秋田 = [] satisfies MergePoint[];
+
+const 山形 = [] satisfies MergePoint[];
+
+const 福島 = [] satisfies MergePoint[];
+
+const 茨城 = [] satisfies MergePoint[];
+
+const 栃木 = [] satisfies MergePoint[];
+
+const 群馬 = [] satisfies MergePoint[];
+
 const 埼玉 = [
+  {
+    label: "国道17号 上尾道路 下り 桶川北本IC",
+    longitude: 139.5216197,
+    latitude: 35.9977268,
+    angle: 330,
+    merge: "left",
+    comments: ["圏央道入口の右分岐を過ぎたところで1車線になる。"],
+  },
+  {
+    label: "国道17号 上尾道路 上り 道の駅べに花の郷おけがわ",
+    longitude: 139.5271853,
+    latitude: 35.9917906,
+    angle: 140,
+    merge: "left",
+    comments: ["道の駅を過ぎたところで1車線になる。"],
+  },
+  {
+    label: "国道17号 上尾道路 下り 小敷谷",
+    longitude: 139.5602167,
+    latitude: 35.9614516,
+    angle: 300,
+    merge: "left",
+  },
+  {
+    label: "国道16号 東大宮バイパス 内回り 県道3号合流手前",
+    longitude: 139.6270815,
+    latitude: 35.9603213,
+    angle: 230,
+    merge: "left",
+    comments: ["アンダーパスを上る途中で左車線へ絞り込み。"],
+  },
+  {
+    label: "県道3号 上り 国道16号合流手前",
+    longitude: 139.6266523,
+    latitude: 35.9599022,
+    angle: 230,
+    merge: "left",
+    comments: ["原市(中)交差点を過ぎたところで左車線へ絞り込み。"],
+  },
+  {
+    label: "国道17号 上尾道路 上り 宮前IC",
+    longitude: 139.5922744,
+    latitude: 35.9305006,
+    angle: 170,
+    merge: "left",
+    comments: [
+      "本来は少し先へ右車線へ減少するものの、現在は工事の関係で左車線へ絞り込み。直後、国道16号内回りからの合流の手前で右車線へ移動することになる。",
+    ],
+  },
+  {
+    label: "国道17号 新大宮バイパス 下り 与野",
+    longitude: 139.6123052,
+    latitude: 35.8902748,
+    angle: 330,
+    merge: "left",
+    multi: true,
+    comments: [
+      "工事の関係で車線構造が変わることがあるが、とりあえず直進の場合は左2車線に寄っておけば間違いない。",
+    ],
+  },
+  {
+    label: "国道16号 西大宮バイパス 外回り 宮前IC",
+    longitude: 139.5907187,
+    latitude: 35.9270338,
+    angle: 50,
+    merge: "right",
+    comments: [
+      "左に新大宮バイパス・上尾道路の分岐のあと、右に絞り込み。国道16号を直進する場合はあらかじめ右に寄っておくのが良い。",
+    ],
+  },
   {
     label: "東埼玉道路 下り. 八条白鳥",
     longitude: 139.8294112,
@@ -10,6 +100,8 @@ const 埼玉 = [
     comments: ["八条白鳥交差点で国道298号から入ったところ、最初は2車線だがすぐ1車線になる。"],
   },
 ] satisfies MergePoint[];
+
+const 千葉 = [] satisfies MergePoint[];
 
 const 東京 = [
   {
@@ -128,6 +220,14 @@ const 神奈川 = [
     ],
   },
   {
+    label: "国道246号 下り 厚木",
+    longitude: 139.3538797,
+    latitude: 35.4293071,
+    angle: 230,
+    merge: "left",
+    comments: ["国道129号との分岐後、2車線になったと思うとすぐ1車線になる。"],
+  },
+  {
     label: "国道16号側道 橋本五差路",
     longitude: 139.343749,
     latitude: 35.5869058,
@@ -145,4 +245,127 @@ const 神奈川 = [
   },
 ] satisfies MergePoint[];
 
-export const DECREASE_DATA = [...埼玉, ...東京, ...神奈川] satisfies MergePoint[];
+const 新潟 = [] satisfies MergePoint[];
+
+const 富山 = [] satisfies MergePoint[];
+
+const 石川 = [] satisfies MergePoint[];
+
+const 福井 = [] satisfies MergePoint[];
+
+const 山梨 = [] satisfies MergePoint[];
+
+const 長野 = [] satisfies MergePoint[];
+
+const 岐阜 = [] satisfies MergePoint[];
+
+const 静岡 = [
+  {
+    label: "国道246号 上り 菅沼",
+    longitude: 138.9505371,
+    latitude: 35.3485457,
+    angle: 30,
+    merge: "left",
+    comments: ["道の駅ふじおやまを過ぎ、菅沼交差点の先で1車線になる。"],
+  },
+] satisfies MergePoint[];
+
+const 愛知 = [] satisfies MergePoint[];
+
+const 三重 = [] satisfies MergePoint[];
+
+const 滋賀 = [] satisfies MergePoint[];
+
+const 京都 = [] satisfies MergePoint[];
+
+const 大阪 = [] satisfies MergePoint[];
+
+const 兵庫 = [] satisfies MergePoint[];
+
+const 奈良 = [] satisfies MergePoint[];
+
+const 和歌山 = [] satisfies MergePoint[];
+
+const 鳥取 = [] satisfies MergePoint[];
+
+const 島根 = [] satisfies MergePoint[];
+
+const 岡山 = [] satisfies MergePoint[];
+
+const 広島 = [] satisfies MergePoint[];
+
+const 山口 = [] satisfies MergePoint[];
+
+const 徳島 = [] satisfies MergePoint[];
+
+const 香川 = [] satisfies MergePoint[];
+
+const 愛媛 = [] satisfies MergePoint[];
+
+const 高知 = [] satisfies MergePoint[];
+
+const 福岡 = [] satisfies MergePoint[];
+
+const 佐賀 = [] satisfies MergePoint[];
+
+const 長崎 = [] satisfies MergePoint[];
+
+const 熊本 = [] satisfies MergePoint[];
+
+const 大分 = [] satisfies MergePoint[];
+
+const 宮崎 = [] satisfies MergePoint[];
+
+const 鹿児島 = [] satisfies MergePoint[];
+
+const 沖縄 = [] satisfies MergePoint[];
+
+export const DECREASE_DATA = [
+  ...北海道,
+  ...青森,
+  ...岩手,
+  ...宮城,
+  ...秋田,
+  ...山形,
+  ...福島,
+  ...茨城,
+  ...栃木,
+  ...群馬,
+  ...埼玉,
+  ...千葉,
+  ...東京,
+  ...神奈川,
+  ...新潟,
+  ...富山,
+  ...石川,
+  ...福井,
+  ...山梨,
+  ...長野,
+  ...岐阜,
+  ...静岡,
+  ...愛知,
+  ...三重,
+  ...滋賀,
+  ...京都,
+  ...大阪,
+  ...兵庫,
+  ...奈良,
+  ...和歌山,
+  ...鳥取,
+  ...島根,
+  ...岡山,
+  ...広島,
+  ...山口,
+  ...徳島,
+  ...香川,
+  ...愛媛,
+  ...高知,
+  ...福岡,
+  ...佐賀,
+  ...長崎,
+  ...熊本,
+  ...大分,
+  ...宮崎,
+  ...鹿児島,
+  ...沖縄,
+] satisfies MergePoint[];

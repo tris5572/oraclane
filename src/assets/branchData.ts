@@ -2,14 +2,143 @@ import type { BranchPoint } from "../types/types";
 
 // ←↖↑↗→
 
+const 北海道 = [] satisfies BranchPoint[];
+
+const 青森 = [] satisfies BranchPoint[];
+
+const 岩手 = [] satisfies BranchPoint[];
+
+const 宮城 = [] satisfies BranchPoint[];
+
+const 秋田 = [] satisfies BranchPoint[];
+
+const 山形 = [] satisfies BranchPoint[];
+
+const 福島 = [] satisfies BranchPoint[];
+
+const 茨城 = [] satisfies BranchPoint[];
+
+const 栃木 = [] satisfies BranchPoint[];
+
+const 群馬 = [] satisfies BranchPoint[];
+
+const 埼玉 = [
+  {
+    label: "国道17号 上り 吉野町",
+    longitude: 139.608247,
+    latitude: 35.9531345,
+    angle: 180,
+    lanes: ["↖", "↑"],
+    comments: ["新大宮バイパス方面と国道16号内回りは右車線。", "左車線は国道17号旧道。"],
+  },
+  {
+    label: "国道16号 東大宮バイパス 外回り 栗橋分岐",
+    longitude: 139.6222106,
+    latitude: 35.9580235,
+    angle: 70,
+    lanes: ["↖", "↑", "↑"],
+    comments: [
+      "国道16号は右2車線でアンダーパスをくぐる。",
+      "左車線は県道3号の白岡・久喜・栗橋方面。",
+    ],
+  },
+  {
+    label: "国道16号 外回り 吉野町の手前",
+    longitude: 139.6082363,
+    latitude: 35.948447,
+    angle: 0,
+    lanes: ["↖", "↖", "↑"],
+    comments: ["国道16号は左2車線で地上へ降りたあとに右折2車線。", "右車線は国道17号の群馬方面。"],
+  },
+  {
+    label: "国道16号 内回り 宮前IC",
+    longitude: 139.5944658,
+    latitude: 35.9307787,
+    angle: 215,
+    lanes: ["↖", "↖", "↑"],
+    comments: [
+      "国道16号直進は右車線。",
+      "左2車線は国道17号新大宮バイパスで東京方面",
+      "上尾道路で桶川北本IC方面へ向かうときは中央車線。",
+    ],
+  },
+  {
+    label: "国道17号 新大宮バイパス 下り 宮前IC",
+    longitude: 139.5926285,
+    latitude: 35.9235602,
+    angle: 0,
+    lanes: ["↖↑", "↗", "↗"],
+    comments: [
+      "国道16号と国道17号が交差する巨大インターチェンジ。",
+      "国道17号を群馬方面へ下るときは右2車線。",
+      "左車線は左分岐で国道16号 西大宮バイパスで川越・八王子方面と、直進で上尾道路の桶川北本IC方面（すぐ2車線に増える）。",
+    ],
+  },
+  {
+    label: "国道17号 下り 川岸三丁目",
+    longitude: 139.6835446,
+    latitude: 35.8053343,
+    angle: 350,
+    lanes: ["↑", "→"],
+    comments: ["戸田橋で荒川を渡ってすぐ、右車線が右折専用レーンになる。"],
+  },
+] satisfies BranchPoint[];
+
+const 千葉 = [] satisfies BranchPoint[];
+
 const 東京 = [
+  {
+    label: "国道4号 上り 千住大橋",
+    longitude: 139.7981152,
+    latitude: 35.7405453,
+    angle: 200,
+    lanes: ["↖", "↖", "↑", "↑"],
+    comments: ["右側2車線が国道4号 上野方面。左側2車線は南千住・浅草方面。"],
+  },
   {
     label: "内堀通り 外回り 祝田橋",
     longitude: 139.7564203,
     latitude: 35.6774515,
     angle: 200,
-    lanes: ["←↑", "→", "→", "→", "→"],
-    comments: ["5車線の交差点。", "最も左のレーンのみが直進・左折で、それ以外の4レーンは右折。"],
+    lanes: ["←↑", "→", "→"],
+    comments: [
+      "中央と右の右折車線がそれぞれ2つに分岐する、5車線の交差点。",
+      "最も左のレーンのみが直進・左折で、それ以外の4レーンは右折。",
+    ],
+  },
+  {
+    label: "都道316号 昭和通り 地下道出口・江戸橋北",
+    longitude: 139.7768641,
+    latitude: 35.6835578,
+    angle: 20,
+    lanes: ["↑", "→"],
+    comments: [
+      "地下道を出た先、江戸橋北交差点では右車線が右折専用なので、直進して国道4号へ行くためには左車線に寄る必要がある。手前から詰まっていることが多いので、早めの移動が良い。",
+    ],
+  },
+  {
+    label: "都道316号 海岸通り 上り 蓬莱橋",
+    longitude: 139.7626698,
+    latitude: 35.6660581,
+    angle: 330,
+    lanes: ["←", "←", "↑", "→", "→"],
+    comments: ["右折後に地下道に入って信号をパスするなら、最も右の車線がおすすめ。"],
+  },
+  {
+    label: "都道316号 海岸通り 上り 汐先橋",
+    longitude: 139.7624016,
+    latitude: 35.6631195,
+    angle: 35,
+    lanes: ["↑", "↑", "→"],
+    comments: ["右車線が首都高出口のところで2車線に分岐して、交差点は右折2車線。"],
+  },
+  {
+    label: "都道316号 海岸通り 上り 五色橋北詰",
+    longitude: 139.751595,
+    latitude: 35.635911,
+    angle: 20,
+    lanes: ["↑", "↑", "→"],
+    comments: ["この交差点だけ右車線が右折専用。すぐ3車線に戻る。"],
   },
   {
     label: "新東海橋",
@@ -135,6 +264,17 @@ const 神奈川 = [
     comments: ["直角左カーブ（左折）の直後、右車線の右折のみが国道1号。"],
   },
   {
+    label: "国道1号 上り 小田原箱根道路",
+    longitude: 139.1227162,
+    latitude: 35.2398941,
+    angle: 30,
+    lanes: ["↖", "↑"],
+    comments: [
+      "一般道へ下りる場合は、トンネル内までに左車線に寄っておく必要がある。右車線だと有料道路で遠くまで連れて行かれてしまう。",
+      "小田原厚木道路・西湘バイパスへ行く場合はどちらの車線でも良いが、この先で分岐するので、小田厚は左車線、西湘バイパスは右車線が楽。",
+    ],
+  },
+  {
     label: "尻手黒川道路 東名川崎の入口",
     longitude: 139.5688722,
     latitude: 35.588265,
@@ -143,6 +283,17 @@ const 神奈川 = [
     comments: [
       "この先、右車線は東名川崎ICに入るのみ。",
       "実際に東名に入る東名入口交差点で、左右両方の車線が2つに分岐して4車線になる。",
+    ],
+  },
+  {
+    label: "国道246号 下り 厚木",
+    longitude: 139.3572056,
+    latitude: 35.4346667,
+    angle: 185,
+    lanes: ["↖", "↑", "↑"],
+    comments: [
+      "左1車線の側道への斜め左分岐のみが国道246号 伊勢原・御殿場方面。それ以外の直進2車線は国道129号 平塚方面。",
+      "斜め左の国道246号は2車線になるが、すぐ左に合流して1車線になる。",
     ],
   },
   {
@@ -165,7 +316,121 @@ const 神奈川 = [
   },
 ] satisfies BranchPoint[];
 
+const 新潟 = [] satisfies BranchPoint[];
+
+const 富山 = [] satisfies BranchPoint[];
+
+const 石川 = [] satisfies BranchPoint[];
+
+const 福井 = [] satisfies BranchPoint[];
+
+const 山梨 = [] satisfies BranchPoint[];
+
+const 長野 = [] satisfies BranchPoint[];
+
+const 岐阜 = [] satisfies BranchPoint[];
+
+const 静岡 = [] satisfies BranchPoint[];
+
+const 愛知 = [] satisfies BranchPoint[];
+
+const 三重 = [] satisfies BranchPoint[];
+
+const 滋賀 = [] satisfies BranchPoint[];
+
+const 京都 = [] satisfies BranchPoint[];
+
+const 大阪 = [] satisfies BranchPoint[];
+
+const 兵庫 = [] satisfies BranchPoint[];
+
+const 奈良 = [] satisfies BranchPoint[];
+
+const 和歌山 = [] satisfies BranchPoint[];
+
+const 鳥取 = [] satisfies BranchPoint[];
+
+const 島根 = [] satisfies BranchPoint[];
+
+const 岡山 = [] satisfies BranchPoint[];
+
+const 広島 = [] satisfies BranchPoint[];
+
+const 山口 = [] satisfies BranchPoint[];
+
+const 徳島 = [] satisfies BranchPoint[];
+
+const 香川 = [] satisfies BranchPoint[];
+
+const 愛媛 = [] satisfies BranchPoint[];
+
+const 高知 = [] satisfies BranchPoint[];
+
+const 福岡 = [] satisfies BranchPoint[];
+
+const 佐賀 = [] satisfies BranchPoint[];
+
+const 長崎 = [] satisfies BranchPoint[];
+
+const 熊本 = [] satisfies BranchPoint[];
+
+const 大分 = [] satisfies BranchPoint[];
+
+const 宮崎 = [] satisfies BranchPoint[];
+
+const 鹿児島 = [] satisfies BranchPoint[];
+
+const 沖縄 = [] satisfies BranchPoint[];
+
 /**
  * 分岐箇所のデータ
  */
-export const BRANCH_DATA = [...東京, ...神奈川] satisfies BranchPoint[];
+export const BRANCH_DATA = [
+  ...北海道,
+  ...青森,
+  ...岩手,
+  ...宮城,
+  ...秋田,
+  ...山形,
+  ...福島,
+  ...茨城,
+  ...栃木,
+  ...群馬,
+  ...埼玉,
+  ...千葉,
+  ...東京,
+  ...神奈川,
+  ...新潟,
+  ...富山,
+  ...石川,
+  ...福井,
+  ...山梨,
+  ...長野,
+  ...岐阜,
+  ...静岡,
+  ...愛知,
+  ...三重,
+  ...滋賀,
+  ...京都,
+  ...大阪,
+  ...兵庫,
+  ...奈良,
+  ...和歌山,
+  ...鳥取,
+  ...島根,
+  ...岡山,
+  ...広島,
+  ...山口,
+  ...徳島,
+  ...香川,
+  ...愛媛,
+  ...高知,
+  ...福岡,
+  ...佐賀,
+  ...長崎,
+  ...熊本,
+  ...大分,
+  ...宮崎,
+  ...鹿児島,
+  ...沖縄,
+] satisfies BranchPoint[];
