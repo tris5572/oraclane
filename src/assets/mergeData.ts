@@ -99,6 +99,13 @@ const 埼玉 = [
     merge: "left",
     comments: ["八条白鳥交差点で国道298号から入ったところ、最初は2車線だがすぐ1車線になる。"],
   },
+  {
+    label: "国道463号 浦和所沢バイパス 下り 牛沼",
+    longitude: 139.4914126,
+    latitude: 35.7985254,
+    angle: 260,
+    merge: "left",
+  },
 ] satisfies MergePoint[];
 
 const 千葉 = [] satisfies MergePoint[];
