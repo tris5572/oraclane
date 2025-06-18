@@ -1,4 +1,5 @@
 import "./App.css";
+import { InformationView } from "./components/InformationView";
 import { MapView } from "./components/MapView";
 
 export function App() {
@@ -7,7 +8,7 @@ export function App() {
       <div className="map-view">
         <MapView />
       </div>
-      <div className="information-view">情報</div>
+      <InformationView />
     </div>
   );
 }
