@@ -6,13 +6,17 @@ import {
   ScaleControl,
 } from "react-map-gl/maplibre";
 import "maplibre-gl/dist/maplibre-gl.css";
+import { useSetAtom } from "jotai";
 import { useMemo } from "react";
 import { BRANCH_DATA } from "../assets/branchData";
 import { DECREASE_DATA } from "../assets/mergeData";
+import { selectedPointDataAtom } from "../atoms/app";
 import { BranchPin } from "./BranchPin";
 import { MergePointPin } from "./MergePointPin";
 
 export function MapView() {
+  const setSelectedData = useSetAtom(selectedPointDataAtom);
+
   const decreaseMarkers = useMemo(
     () =>
       DECREASE_DATA.map((data) => (
@@ -21,14 +25,12 @@ export function MapView() {
           longitude={data.longitude}
           latitude={data.latitude}
           anchor="center"
-          onClick={() => {
-            console.log("clicked");
-          }}
+          onClick={() => setSelectedData({ type: "merge", ...data })}
         >
           <MergePointPin data={data} />
         </ReactMap.Marker>
       )),
-    [],
+    [setSelectedData],
   );
 
   const branchMarkers = useMemo(
@@ -39,14 +41,12 @@ export function MapView() {
           longitude={data.longitude}
           latitude={data.latitude}
           anchor="center"
-          onClick={() => {
-            console.log("clicked");
-          }}
+          onClick={() => setSelectedData({ type: "branch", ...data })}
         >
           <BranchPin data={data} />
         </ReactMap.Marker>
       )),
-    [],
+    [setSelectedData],
   );
 
   return (

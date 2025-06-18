@@ -83,3 +83,8 @@ export type BranchPoint = {
    */
   comments?: string[];
 };
+
+/**
+ * 地点の情報を一括で扱うタグ付きユニオン
+ */
+export type PointDataType = (MergePoint & { type: "merge" }) | (BranchPoint & { type: "branch" });
