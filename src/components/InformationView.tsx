@@ -16,5 +16,12 @@ export function InformationView() {
 }
 
 function DataInner({ data }: { data: PointDataType }) {
-  return <h2>{data.label}</h2>;
+  return (
+    <>
+      <h2>{data.label}</h2>
+      {data.comments?.map((line) => (
+        <p key={line}>{line}</p>
+      ))}
+    </>
+  );
 }
