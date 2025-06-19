@@ -12,7 +12,7 @@ import { BRANCH_DATA } from "../assets/branchData";
 import { DECREASE_DATA } from "../assets/mergeData";
 import { selectedPointDataAtom } from "../atoms/app";
 import { BranchPin } from "./BranchPin";
-import { MergePointPin } from "./MergePointPin";
+import { MergePin } from "./MergePin";
 
 export function MapView() {
   const setSelectedData = useSetAtom(selectedPointDataAtom);
@@ -27,7 +27,7 @@ export function MapView() {
           anchor="center"
           onClick={() => setSelectedData({ type: "merge", ...data })}
         >
-          <MergePointPin data={data} />
+          <MergePin data={data} />
         </ReactMap.Marker>
       )),
     [setSelectedData],
