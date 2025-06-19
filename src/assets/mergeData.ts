@@ -18,7 +18,24 @@ const 茨城 = [] satisfies MergePoint[];
 
 const 栃木 = [] satisfies MergePoint[];
 
-const 群馬 = [] satisfies MergePoint[];
+const 群馬 = [
+  {
+    label: "国道17号 上武道路 上り 尾島パーキング",
+    longitude: 139.3122545,
+    latitude: 36.2443941,
+    angle: 195,
+    merge: "left",
+    comments: ["右カーブで高架に上がった先で左に絞り込まれる。"],
+  },
+  {
+    label: "国道17号 上武道路 下り 上武小神明",
+    longitude: 139.0934747,
+    latitude: 36.4215687,
+    angle: 290,
+    merge: "left",
+    comments: ["付近は4車線化工事が進行中。"],
+  },
+] satisfies MergePoint[];
 
 const 埼玉 = [
   {
@@ -90,6 +107,24 @@ const 埼玉 = [
     comments: [
       "左に新大宮バイパス・上尾道路の分岐のあと、右に絞り込み。国道16号を直進する場合はあらかじめ右に寄っておくのが良い。",
     ],
+  },
+  {
+    label: "国道17号 熊谷バイパス 上り 上之(南)",
+    longitude: 139.4210154,
+    latitude: 36.1506076,
+    angle: 140,
+    merge: "left",
+    multi: true,
+    comments: ["部分的に3車線だが、国道125号との交差点の先において短区間で2車線に戻る。"],
+  },
+  {
+    label: "国道17号 熊谷バイパス 下り 上川上",
+    longitude: 139.4002551,
+    latitude: 36.1611859,
+    angle: 300,
+    merge: "left",
+    multi: true,
+    comments: ["部分的に3車線だが短区間で2車線に戻る。"],
   },
   {
     label: "東埼玉道路 下り 八条白鳥",
