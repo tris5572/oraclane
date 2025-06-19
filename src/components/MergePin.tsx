@@ -28,7 +28,7 @@ export function MergePin({ data, size = 40 }: Props) {
       <g transform={`rotate(${data.angle}, 50, 50)`}>
         {/* 背景 */}
         <path
-          d="M50,2 L90,40 L90,70 L70,90 L30,90 L10,70 L10,40 z"
+          d="M50,2 85,25 L85,80 L75,90 L25,90 L15,80 L15,25 z"
           fill="hsl(58, 100%, 70%)"
           stroke="hsl(58, 50%, 50%)"
           strokeWidth="4"
