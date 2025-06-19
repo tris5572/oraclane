@@ -21,7 +21,7 @@ const SVG_STYLE: CSSProperties = {
 /**
  * 車線減少を表すピン
  */
-export function MergePointPin({ data, size = 40 }: Props) {
+export function MergePin({ data, size = 40 }: Props) {
   return (
     <svg height={size} viewBox="0 0 100 100" style={SVG_STYLE}>
       <title>{data.label}</title>
