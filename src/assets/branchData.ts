@@ -2,7 +2,24 @@ import type { BranchPoint } from "../types/types";
 
 // ←↖↑↗→
 
-const 北海道 = [] satisfies BranchPoint[];
+const 北海道 = [
+  {
+    label: "国道36号 上り 苫小牧駅前",
+    longitude: 141.6013965,
+    latitude: 42.6328123,
+    angle: 230,
+    lanes: ["←", "↑", "↑→"],
+    comments: [""],
+  },
+  {
+    label: "国道36号 上り 室蘭中央",
+    longitude: 140.9762675,
+    latitude: 42.3165745,
+    angle: 260,
+    lanes: ["←↑", "→", "→"],
+    comments: ["右折後すぐ、2車線から右への絞り込みで1車線になる。"],
+  },
+] satisfies BranchPoint[];
 
 const 青森 = [] satisfies BranchPoint[];
 
@@ -30,6 +47,17 @@ const 埼玉 = [
     angle: 180,
     lanes: ["↖", "↑"],
     comments: ["新大宮バイパス方面と国道16号内回りは右車線。", "左車線は国道17号旧道。"],
+  },
+  {
+    label: "国道16号 西大宮バイパス 外回り 宮前IC",
+    longitude: 139.5898873,
+    latitude: 35.9264769,
+    angle: 50,
+    lanes: ["↖", "↑"],
+    comments: [
+      "国道16号の直進は右車線。左分岐が新大宮バイパス・上尾道路。",
+      "分岐後もわずかに左車線が続いたあと、右1車線になる。",
+    ],
   },
   {
     label: "国道16号 東大宮バイパス 外回り 栗橋分岐",
