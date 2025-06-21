@@ -26,6 +26,7 @@ export function MapView() {
           latitude={data.latitude}
           anchor="center"
           onClick={() => setSelectedData({ type: "merge", ...data })}
+          style={{ cursor: "pointer" }}
         >
           <MergePin data={data} />
         </ReactMap.Marker>
