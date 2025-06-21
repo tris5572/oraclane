@@ -49,6 +49,22 @@ const 北海道 = [
     merge: "right",
     comments: ["白鳥大橋からの合流後、すぐ1車線になる。"],
   },
+  {
+    label: "国道5号 八雲バイパス 下り 八雲",
+    longitude: 140.2720991,
+    latitude: 42.2760114,
+    angle: 0,
+    merge: "right",
+    comments: [""],
+  },
+  {
+    label: "国道5号 八雲バイパス 上り 八雲",
+    longitude: 140.2885866,
+    latitude: 42.2472362,
+    angle: 150,
+    merge: "right",
+    comments: [""],
+  },
 ] satisfies MergePoint[];
 
 const 青森 = [] satisfies MergePoint[];
