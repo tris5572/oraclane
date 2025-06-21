@@ -58,6 +58,7 @@ export function MapView() {
         zoom: 11,
       }}
       mapStyle="https://tile.openstreetmap.jp/styles/osm-bright-ja/style.json"
+      attributionControl={false}
     >
       {decreaseMarkers}
       {branchMarkers}
