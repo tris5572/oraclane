@@ -1,4 +1,3 @@
-import type { CSSProperties } from "react";
 import type { MergePoint } from "../types/types";
 
 type Props = {
@@ -10,10 +9,10 @@ type Props = {
    * 大きさ。省略時は `40`
    */
   size?: number;
-};
-
-const SVG_STYLE: CSSProperties = {
-  cursor: "pointer",
+  /**
+   * 前景だけを描画する（背景を描画しない）フラグ
+   */
+  onlyFront?: boolean;
 };
 
 // TODO: 道路の種類に応じて色を変える
@@ -21,21 +20,25 @@ const SVG_STYLE: CSSProperties = {
 /**
  * 車線減少を表すピン
  */
-export function MergePin({ data, size = 40 }: Props) {
+export function MergePin({ data, size = 40, onlyFront }: Props) {
   return (
-    <svg height={size} viewBox="0 0 100 100" style={SVG_STYLE}>
+    <svg height={size} viewBox="0 0 100 100">
       <title>{data.label}</title>
       <g transform={`rotate(${data.angle}, 50, 50)`}>
         {/* 背景 */}
-        <path
-          d="M50,2 85,25 L85,80 L75,90 L25,90 L15,80 L15,25 z"
-          fill="hsl(58, 100%, 70%)"
-          stroke="hsl(58, 50%, 50%)"
-          strokeWidth="4"
-          strokeLinejoin="round"
-        />
-        {/* 先端表示 */}
-        <path d="M50,2 L55,20 L45,20 z" fill="hsl(300, 100%, 70%)" />
+        {!onlyFront && (
+          <>
+            <path
+              d="M50,2 85,25 L85,80 L75,90 L25,90 L15,80 L15,25 z"
+              fill="hsl(58, 100%, 70%)"
+              stroke="hsl(58, 50%, 50%)"
+              strokeWidth="4"
+              strokeLinejoin="round"
+            />
+            {/* 先端表示 */}
+            <path d="M50,2 L55,20 L45,20 z" fill="hsl(300, 100%, 70%)" />
+          </>
+        )}
         {/* 外側線 */}
         <g fill="none" stroke="hsl(0, 0%, 0%)" strokeWidth="4">
           {data.merge === "right" ? (
