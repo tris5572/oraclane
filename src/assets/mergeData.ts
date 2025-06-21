@@ -1,6 +1,39 @@
 import type { MergePoint } from "../types/types";
 
-const 北海道 = [] satisfies MergePoint[];
+const 北海道 = [
+  {
+    label: "国道36号 上り 石山",
+    longitude: 141.3192576,
+    latitude: 42.5266319,
+    angle: 220,
+    merge: "right",
+    comments: [""],
+  },
+  {
+    label: "国道36号 下り 竹浦",
+    longitude: 141.2438044,
+    latitude: 42.4796568,
+    angle: 45,
+    merge: "right",
+    comments: [""],
+  },
+  {
+    label: "国道36号 上り 登別",
+    longitude: 141.1701295,
+    latitude: 42.4452496,
+    angle: 240,
+    merge: "right",
+    comments: [""],
+  },
+  {
+    label: "国道36号 下り 室蘭中央",
+    longitude: 140.9738454,
+    latitude: 42.3172292,
+    angle: 330,
+    merge: "right",
+    comments: [""],
+  },
+] satisfies MergePoint[];
 
 const 青森 = [] satisfies MergePoint[];
 

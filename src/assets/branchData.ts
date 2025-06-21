@@ -2,7 +2,24 @@ import type { BranchPoint } from "../types/types";
 
 // ←↖↑↗→
 
-const 北海道 = [] satisfies BranchPoint[];
+const 北海道 = [
+  {
+    label: "国道36号 上り 苫小牧駅前",
+    longitude: 141.6013965,
+    latitude: 42.6328123,
+    angle: 230,
+    lanes: ["←", "↑", "↑→"],
+    comments: [""],
+  },
+  {
+    label: "国道36号 上り 室蘭中央",
+    longitude: 140.9762675,
+    latitude: 42.3165745,
+    angle: 260,
+    lanes: ["←↑", "→", "→"],
+    comments: ["右折後すぐ、2車線から右への絞り込みで1車線になる。"],
+  },
+] satisfies BranchPoint[];
 
 const 青森 = [] satisfies BranchPoint[];
 
