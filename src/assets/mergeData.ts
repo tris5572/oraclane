@@ -33,6 +33,22 @@ const 北海道 = [
     merge: "right",
     comments: [""],
   },
+  {
+    label: "国道36号 上り 幌萌",
+    longitude: 140.9586748,
+    latitude: 42.3613872,
+    angle: 70,
+    merge: "right",
+    comments: [""],
+  },
+  {
+    label: "国道36号 上り 陣屋町",
+    longitude: 140.9459585,
+    latitude: 42.3685257,
+    angle: 270,
+    merge: "right",
+    comments: ["白鳥大橋からの合流後、すぐ1車線になる。"],
+  },
 ] satisfies MergePoint[];
 
 const 青森 = [] satisfies MergePoint[];
