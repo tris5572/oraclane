@@ -35,6 +35,25 @@ const 群馬 = [
     merge: "left",
     comments: ["付近は4車線化工事が進行中。"],
   },
+  {
+    label: "県道78号 太田市新井町",
+    longitude: 139.3722877,
+    latitude: 36.2892426,
+    angle: 90,
+    merge: "left",
+    comments: [
+      "国道との交差点の少し手前で1車線になる。流れが悪いことが多く、割り込みが多発するので注意。",
+      "この車線レイアウトを考えた人はどうかしている。",
+    ],
+  },
+  {
+    label: "県道332号 山之神",
+    longitude: 139.3191183,
+    latitude: 36.3451058,
+    angle: 340,
+    merge: "left",
+    comments: ["北関東道をくぐる手前で1車線になる。"],
+  },
 ] satisfies MergePoint[];
 
 const 埼玉 = [
