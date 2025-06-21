@@ -117,6 +117,22 @@ const 埼玉 = [
     comments: ["部分的に3車線だが短区間で2車線に戻る。"],
   },
   {
+    label: "国道17号 上武道路 上り 堀米",
+    longitude: 139.3294099,
+    latitude: 36.2136402,
+    angle: 160,
+    merge: "left",
+    comments: ["1kmほどの短区間のみ2車線で、すぐ1車線に戻る。"],
+  },
+  {
+    label: "国道17号 上武道路 下り 蓮沼",
+    longitude: 139.3229699,
+    latitude: 36.2193807,
+    angle: 310,
+    merge: "left",
+    comments: ["1kmほどの短区間のみ2車線で、すぐ1車線に戻る。"],
+  },
+  {
     label: "東埼玉道路 下り 八条白鳥",
     longitude: 139.8294112,
     latitude: 35.8515217,
