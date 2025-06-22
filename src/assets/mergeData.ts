@@ -65,6 +65,22 @@ const 北海道 = [
     merge: "right",
     comments: [""],
   },
+  {
+    label: "国道5号 上り 赤井川",
+    longitude: 140.6300962,
+    latitude: 42.0093571,
+    angle: 330,
+    merge: "right",
+    comments: ["短距離だけ2車線。"],
+  },
+  {
+    label: "国道5号 下り 赤井川",
+    longitude: 140.6339961,
+    latitude: 42.0021311,
+    angle: 160,
+    merge: "right",
+    comments: ["短距離だけ2車線。ラッキーピエロのところで車線減少。"],
+  },
 ] satisfies MergePoint[];
 
 const 青森 = [] satisfies MergePoint[];
