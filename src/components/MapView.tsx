@@ -1,8 +1,9 @@
-import * as ReactMap from "react-map-gl/maplibre";
 import {
   FullscreenControl,
   GeolocateControl,
+  Marker,
   NavigationControl,
+  Map as ReactMap,
   ScaleControl,
 } from "react-map-gl/maplibre";
 import "maplibre-gl/dist/maplibre-gl.css";
@@ -20,7 +21,7 @@ export function MapView() {
   const decreaseMarkers = useMemo(
     () =>
       DECREASE_DATA.map((data) => (
-        <ReactMap.Marker
+        <Marker
           key={`marker-${data.longitude}-${data.latitude}`}
           longitude={data.longitude}
           latitude={data.latitude}
@@ -29,7 +30,7 @@ export function MapView() {
           style={{ cursor: "pointer" }}
         >
           <MergePin data={data} />
-        </ReactMap.Marker>
+        </Marker>
       )),
     [setSelectedData],
   );
@@ -37,7 +38,7 @@ export function MapView() {
   const branchMarkers = useMemo(
     () =>
       BRANCH_DATA.map((data) => (
-        <ReactMap.Marker
+        <Marker
           key={`marker-${data.longitude}-${data.latitude}`}
           longitude={data.longitude}
           latitude={data.latitude}
@@ -45,13 +46,13 @@ export function MapView() {
           onClick={() => setSelectedData({ type: "branch", ...data })}
         >
           <BranchPin data={data} />
-        </ReactMap.Marker>
+        </Marker>
       )),
     [setSelectedData],
   );
 
   return (
-    <ReactMap.Map
+    <ReactMap
       initialViewState={{
         latitude: 35.7010742,
         longitude: 139.6499634,
@@ -66,6 +67,6 @@ export function MapView() {
       <NavigationControl />
       <FullscreenControl />
       <GeolocateControl />
-    </ReactMap.Map>
+    </ReactMap>
   );
 }
