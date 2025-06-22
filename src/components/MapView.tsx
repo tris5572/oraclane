@@ -10,7 +10,7 @@ import "maplibre-gl/dist/maplibre-gl.css";
 import { useSetAtom } from "jotai";
 import { useMemo } from "react";
 import { BRANCH_DATA } from "../assets/branchData";
-import { DECREASE_DATA } from "../assets/mergeData";
+import { MERGE_DATA } from "../assets/mergeData";
 import { selectedPointDataAtom } from "../atoms/app";
 import { BranchPin } from "./BranchPin";
 import { MergePin } from "./MergePin";
@@ -18,9 +18,9 @@ import { MergePin } from "./MergePin";
 export function MapView() {
   const setSelectedData = useSetAtom(selectedPointDataAtom);
 
-  const decreaseMarkers = useMemo(
+  const mergeMarkers = useMemo(
     () =>
-      DECREASE_DATA.map((data) => (
+      MERGE_DATA.map((data) => (
         <Marker
           key={`marker-${data.longitude}-${data.latitude}`}
           longitude={data.longitude}
@@ -61,7 +61,7 @@ export function MapView() {
       mapStyle="https://tile.openstreetmap.jp/styles/osm-bright-ja/style.json"
       attributionControl={false}
     >
-      {decreaseMarkers}
+      {mergeMarkers}
       {branchMarkers}
       <ScaleControl />
       <NavigationControl />
