@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-size: 14px;
+  color: hsl(0, 0%, 20%);
 }
 
 /* #root {
