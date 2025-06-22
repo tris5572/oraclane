@@ -22,7 +22,7 @@ export function MapView() {
     () =>
       MERGE_DATA.map((data) => (
         <Marker
-          key={`marker-${data.longitude}-${data.latitude}`}
+          key={`merge-${data.label}-${data.longitude}-${data.latitude}-${data.angle}-${data.merge}`}
           longitude={data.longitude}
           latitude={data.latitude}
           anchor="center"
@@ -39,7 +39,7 @@ export function MapView() {
     () =>
       BRANCH_DATA.map((data) => (
         <Marker
-          key={`marker-${data.longitude}-${data.latitude}`}
+          key={`branch-${data.label}-${data.longitude}-${data.latitude}-${data.angle}`}
           longitude={data.longitude}
           latitude={data.latitude}
           anchor="center"
