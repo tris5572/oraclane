@@ -420,7 +420,7 @@ const 鹿児島 = [] satisfies MergePoint[];
 
 const 沖縄 = [] satisfies MergePoint[];
 
-export const DECREASE_DATA = [
+export const MERGE_DATA = [
   ...北海道,
   ...青森,
   ...岩手,
