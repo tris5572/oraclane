@@ -29,6 +29,7 @@
   min-width: 20rem;
   max-height: 80%;
   overflow-y: scroll;
+  scrollbar-width: none;
   background-color: hsl(200, 10%, 95%, 70%);
   backdrop-filter: blur(4px);
   padding: 12px;
