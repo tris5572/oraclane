@@ -89,6 +89,14 @@ const 北海道 = [
     merge: "right",
     comments: [""],
   },
+  {
+    label: "国道228号 松前道 上り 富川",
+    longitude: 140.6213093,
+    latitude: 41.8044977,
+    angle: 180,
+    merge: "left",
+    comments: [""],
+  },
 ] satisfies MergePoint[];
 
 const 青森 = [] satisfies MergePoint[];

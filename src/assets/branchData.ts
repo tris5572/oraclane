@@ -28,12 +28,20 @@ const 北海道 = [
     comments: ["右車線は右折2車線になり、函館山・函館駅方面。"],
   },
   {
-    label: "国道227号 下り 万代跨線橋",
+    label: "国道227号 上り 万代跨線橋",
     longitude: 140.7312611,
     latitude: 41.7895873,
     angle: 100,
     lanes: ["←↑", "→"],
     comments: ["跨線橋を下った先が右折専用レーン。ずっと手前から案内があり、車線変更禁止区間。"],
+  },
+  {
+    label: "国道227号 上り 七重浜",
+    longitude: 140.7078052,
+    latitude: 41.8221542,
+    angle: 140,
+    lanes: ["←", "↑→"],
+    comments: [""],
   },
 ] satisfies BranchPoint[];
 
