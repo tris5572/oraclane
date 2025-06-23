@@ -65,14 +65,14 @@ function BranchImage({ data }: { data: BranchPoint }) {
     display: "inline-flex",
     alignItems: "center",
     borderRadius: "4px",
-    height: "30px",
+    height: "44px",
     overflow: "hidden",
     marginTop: "8px",
   };
 
   return (
     <div style={BRANCH_WRAPPER_STYLE}>
-      <BareBranchLanesSvg data={data} />
+      <BareBranchLanesSvg data={data} size={60} />
     </div>
   );
 }
