@@ -44,6 +44,15 @@ export function BranchPin({ data, size = 40 }: Props) {
 
 /**
  * サイズの縮小や背景の描画を行っていない、素の状態の車線の SVG 画像を返す
+ *
+ * ピンを生成する `BranchPin` とは以下のような挙動の大きな違いがあり、
+ * 同一の関数とすると条件分岐が複雑になることから、別の関数として定義している。
+ *
+ * 対象 | ピン | この関数
+ * :--: | :--: | :--:
+ * 横幅 | 固定 | 可変
+ * 内容のサイズ | 縮小 | 固定
+ * 車線の配置 | 左右中央・少し下 | 上下左右中央
  */
 export function BareBranchLanesSvg({ data, size = 40 }: { data: BranchPoint; size?: number }) {
   const svgWidth = LANE_WIDTH * data.lanes.length + 28;
