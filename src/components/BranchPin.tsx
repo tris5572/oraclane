@@ -1,4 +1,3 @@
-import type { CSSProperties } from "react";
 import type { BranchPoint } from "../types/types";
 
 type Props = {
@@ -12,10 +11,6 @@ type Props = {
   size?: number;
 };
 
-const SVG_STYLE: CSSProperties = {
-  cursor: "pointer",
-};
-
 // TODO: 道路の種類に応じて色を変える
 
 const LANE_WIDTH = 40;
@@ -26,7 +21,7 @@ const X_SCALE = 0.9;
  */
 export function BranchPin({ data, size = 40 }: Props) {
   return (
-    <svg height={size} viewBox="0 0 100 100" style={SVG_STYLE} transform={`rotate(${data.angle})`}>
+    <svg height={size} viewBox="0 0 100 100" transform={`rotate(${data.angle})`}>
       <title>{data.label}</title>
       {/* 背景 */}
       <path

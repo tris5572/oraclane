@@ -44,6 +44,7 @@ export function MapView() {
           latitude={data.latitude}
           anchor="center"
           onClick={() => setSelectedData({ type: "branch", ...data })}
+          style={{ cursor: "pointer" }}
         >
           <BranchPin data={data} />
         </Marker>
