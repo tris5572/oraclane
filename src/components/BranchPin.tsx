@@ -43,27 +43,40 @@ export function BranchPin({ data, size = 40 }: Props) {
 }
 
 /**
+ * サイズの縮小や背景の描画を行っていない、素の状態の車線の SVG 画像を返す
+ */
+export function BareBranchLanesSvg({ data, size = 40 }: { data: BranchPoint; size?: number }) {
+  const svgWidth = LANE_WIDTH * data.lanes.length + 28;
+  return (
+    <svg height={size} viewBox={`0 0 ${svgWidth} 100`}>
+      <title>{data.label}</title>
+      <g transform={"translate(14, 50)"}>{lanesPath(data.lanes)}</g>
+    </svg>
+  );
+}
+
+/**
  * 車線部分のパスを生成する
  */
 function lanesPath(lanes: BranchPoint["lanes"]) {
   return (
     <>
-        <path d="M0,-25 l0,50" stroke="hsl(0, 0%, 100%)" strokeWidth={4} /> {/* 左端の線 */}
+      <path d="M0,-25 l0,50" stroke="hsl(0, 0%, 100%)" strokeWidth={4} /> {/* 左端の線 */}
       {lanes.map((lane, index) => (
-          <g
-            // biome-ignore lint/suspicious/noArrayIndexKey: 静的データを元にしていてインデックスが変化することはないため問題ない
-            key={`${lane}-${index}`}
-            transform={`translate(${LANE_WIDTH / 2 + index * LANE_WIDTH})`}
-          >
-            {arrowPath(lane)}
-            {/* 車線間の線。最後は右端なので太くする */}
-            <path
-              d={`M${LANE_WIDTH / 2},-25 l0,50`}
-              stroke="hsl(0, 0%, 100%)"
+        <g
+          // biome-ignore lint/suspicious/noArrayIndexKey: 静的データを元にしていてインデックスが変化することはないため問題ない
+          key={`${lane}-${index}`}
+          transform={`translate(${LANE_WIDTH / 2 + index * LANE_WIDTH})`}
+        >
+          {arrowPath(lane)}
+          {/* 車線間の線。最後は右端なので太くする */}
+          <path
+            d={`M${LANE_WIDTH / 2},-25 l0,50`}
+            stroke="hsl(0, 0%, 100%)"
             strokeWidth={index === lanes.length - 1 ? 4 : 2}
-            />
-          </g>
-        ))}
+          />
+        </g>
+      ))}
     </>
   );
 }
