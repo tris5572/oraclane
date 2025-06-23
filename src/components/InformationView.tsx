@@ -36,8 +36,6 @@ function DataInner({ data }: { data: PointDataType }) {
  * 角度を `0` にして上向きにして前景だけを描画した SVG を取得し、独自の背景の上に重ねたもの。
  */
 function MergeImage({ data }: { data: MergePoint }) {
-  const icon = <MergePin data={{ ...data, angle: 0 }} onlyFront />;
-
   const MERGE_WRAPPER_STYLE: CSSProperties = {
     background: "hsl(58, 100%, 70%)",
     display: "flex",
@@ -49,7 +47,11 @@ function MergeImage({ data }: { data: MergePoint }) {
     marginTop: "8px",
   };
 
-  return <div style={MERGE_WRAPPER_STYLE}>{icon}</div>;
+  return (
+    <div style={MERGE_WRAPPER_STYLE}>
+      <MergePin data={{ ...data, angle: 0 }} onlyFront />
+    </div>
+  );
 }
 
 /**
