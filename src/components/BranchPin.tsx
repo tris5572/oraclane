@@ -1,4 +1,3 @@
-import type { CSSProperties } from "react";
 import type { BranchPoint } from "../types/types";
 
 type Props = {
@@ -12,10 +11,6 @@ type Props = {
   size?: number;
 };
 
-const SVG_STYLE: CSSProperties = {
-  cursor: "pointer",
-};
-
 // TODO: 道路の種類に応じて色を変える
 
 const LANE_WIDTH = 40;
@@ -26,7 +21,7 @@ const X_SCALE = 0.9;
  */
 export function BranchPin({ data, size = 40 }: Props) {
   return (
-    <svg height={size} viewBox="0 0 100 100" style={SVG_STYLE} transform={`rotate(${data.angle})`}>
+    <svg height={size} viewBox="0 0 100 100" transform={`rotate(${data.angle})`}>
       <title>{data.label}</title>
       {/* 背景 */}
       <path
@@ -41,24 +36,57 @@ export function BranchPin({ data, size = 40 }: Props) {
       <g
         transform={`translate(14, 60) scale(${2 < data.lanes.length ? (2 * X_SCALE) / data.lanes.length : X_SCALE}, 1)`}
       >
-        <path d="M0,-25 l0,50" stroke="hsl(0, 0%, 100%)" strokeWidth={4} /> {/* 左端の線 */}
-        {data.lanes.map((lane, index) => (
-          <g
-            // biome-ignore lint/suspicious/noArrayIndexKey: 静的データを元にしていてインデックスが変化することはないため問題ない
-            key={`${lane}-${index}`}
-            transform={`translate(${LANE_WIDTH / 2 + index * LANE_WIDTH})`}
-          >
-            {arrowPath(lane)}
-            {/* 車線間の線。最後は右端なので太くする */}
-            <path
-              d={`M${LANE_WIDTH / 2},-25 l0,50`}
-              stroke="hsl(0, 0%, 100%)"
-              strokeWidth={index === data.lanes.length - 1 ? 4 : 2}
-            />
-          </g>
-        ))}
+        {lanesPath(data.lanes)}
       </g>
     </svg>
+  );
+}
+
+/**
+ * サイズの縮小や背景の描画を行っていない、素の状態の車線の SVG 画像を返す
+ *
+ * ピンを生成する `BranchPin` とは以下のような挙動の大きな違いがあり、
+ * 同一の関数とすると条件分岐が複雑になることから、別の関数として定義している。
+ *
+ * 対象 | ピン | この関数
+ * :--: | :--: | :--:
+ * 横幅 | 固定 | 可変
+ * 内容のサイズ | 縮小 | 固定
+ * 車線の配置 | 左右中央・少し下 | 上下左右中央
+ */
+export function BareBranchLanesSvg({ data, size = 40 }: { data: BranchPoint; size?: number }) {
+  const svgWidth = LANE_WIDTH * data.lanes.length + 28;
+  return (
+    <svg height={size} viewBox={`0 0 ${svgWidth} 100`}>
+      <title>{data.label}</title>
+      <g transform={"translate(14, 50)"}>{lanesPath(data.lanes)}</g>
+    </svg>
+  );
+}
+
+/**
+ * 車線部分のパスを生成する
+ */
+function lanesPath(lanes: BranchPoint["lanes"]) {
+  return (
+    <>
+      <path d="M0,-25 l0,50" stroke="hsl(0, 0%, 100%)" strokeWidth={4} /> {/* 左端の線 */}
+      {lanes.map((lane, index) => (
+        <g
+          // biome-ignore lint/suspicious/noArrayIndexKey: 静的データを元にしていてインデックスが変化することはないため問題ない
+          key={`${lane}-${index}`}
+          transform={`translate(${LANE_WIDTH / 2 + index * LANE_WIDTH})`}
+        >
+          {arrowPath(lane)}
+          {/* 車線間の線。最後は右端なので太くする */}
+          <path
+            d={`M${LANE_WIDTH / 2},-25 l0,50`}
+            stroke="hsl(0, 0%, 100%)"
+            strokeWidth={index === lanes.length - 1 ? 4 : 2}
+          />
+        </g>
+      ))}
+    </>
   );
 }
 
