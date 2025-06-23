@@ -41,8 +41,20 @@ export function BranchPin({ data, size = 40 }: Props) {
       <g
         transform={`translate(14, 60) scale(${2 < data.lanes.length ? (2 * X_SCALE) / data.lanes.length : X_SCALE}, 1)`}
       >
+        {lanesPath(data.lanes)}
+      </g>
+    </svg>
+  );
+}
+
+/**
+ * 車線部分のパスを生成する
+ */
+function lanesPath(lanes: BranchPoint["lanes"]) {
+  return (
+    <>
         <path d="M0,-25 l0,50" stroke="hsl(0, 0%, 100%)" strokeWidth={4} /> {/* 左端の線 */}
-        {data.lanes.map((lane, index) => (
+      {lanes.map((lane, index) => (
           <g
             // biome-ignore lint/suspicious/noArrayIndexKey: 静的データを元にしていてインデックスが変化することはないため問題ない
             key={`${lane}-${index}`}
@@ -53,12 +65,11 @@ export function BranchPin({ data, size = 40 }: Props) {
             <path
               d={`M${LANE_WIDTH / 2},-25 l0,50`}
               stroke="hsl(0, 0%, 100%)"
-              strokeWidth={index === data.lanes.length - 1 ? 4 : 2}
+            strokeWidth={index === lanes.length - 1 ? 4 : 2}
             />
           </g>
         ))}
-      </g>
-    </svg>
+    </>
   );
 }
 
