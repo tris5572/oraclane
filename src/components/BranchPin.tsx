@@ -17,7 +17,7 @@ const LANE_WIDTH = 40;
 const X_SCALE = 0.9;
 
 /**
- * 車線減少を表すピン
+ * 車線の分岐を表すピン
  */
 export function BranchPin({ data, size = 40 }: Props) {
   return (

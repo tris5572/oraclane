@@ -44,6 +44,14 @@
   }
 }
 
+.point-marker {
+  cursor: pointer;
+
+  &.selected {
+    filter: drop-shadow(0 0 5px hsl(300, 100%, 60%));
+  }
+}
+
 /* スマートフォン向けのスタイル */
 @media screen and (max-width: 480px) {
   .information-view {
