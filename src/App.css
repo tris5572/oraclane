@@ -46,6 +46,10 @@
 
 .point-marker {
   cursor: pointer;
+
+  &.selected {
+    filter: drop-shadow(0 0 5px hsl(300, 100%, 50%));
+  }
 }
 
 /* スマートフォン向けのスタイル */

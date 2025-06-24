@@ -28,12 +28,12 @@ export function MapView() {
           latitude={data.latitude}
           anchor="center"
           onClick={() => setSelectedData({ type: "merge", ...data })}
-          className="point-marker"
+          className={`point-marker ${selectedData && isEqualPointData(selectedData, data) ? "selected" : ""}`}
         >
           <MergePin data={data} />
         </Marker>
       )),
-    [setSelectedData],
+    [setSelectedData, selectedData],
   );
 
   const branchMarkers = useMemo(
