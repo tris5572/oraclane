@@ -19,6 +19,30 @@ const 北海道 = [
     lanes: ["←↑", "→", "→"],
     comments: ["右折後すぐ、2車線から右への絞り込みで1車線になる。"],
   },
+  {
+    label: "国道278号 漁火通り 上り 大森稲荷神社",
+    longitude: 140.7374892,
+    latitude: 41.7691616,
+    angle: 250,
+    lanes: ["←↑", "→"],
+    comments: ["右車線は右折2車線になり、函館山・函館駅方面。"],
+  },
+  {
+    label: "国道227号 上り 万代跨線橋",
+    longitude: 140.7312611,
+    latitude: 41.7895873,
+    angle: 100,
+    lanes: ["←↑", "→"],
+    comments: ["跨線橋を下った先が右折専用レーン。ずっと手前から案内があり、車線変更禁止区間。"],
+  },
+  {
+    label: "国道227号 上り 七重浜",
+    longitude: 140.7078052,
+    latitude: 41.8221542,
+    angle: 140,
+    lanes: ["←", "↑→"],
+    comments: [""],
+  },
 ] satisfies BranchPoint[];
 
 const 青森 = [] satisfies BranchPoint[];

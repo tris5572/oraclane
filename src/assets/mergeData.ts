@@ -81,6 +81,22 @@ const 北海道 = [
     merge: "right",
     comments: ["短距離だけ2車線。ラッキーピエロのところで車線減少。"],
   },
+  {
+    label: "国道278号 漁火通り 下り 函館空港南",
+    longitude: 140.7993355,
+    latitude: 41.7726195,
+    angle: 110,
+    merge: "right",
+    comments: [""],
+  },
+  {
+    label: "国道228号 松前道 上り 富川",
+    longitude: 140.6213093,
+    latitude: 41.8044977,
+    angle: 180,
+    merge: "left",
+    comments: [""],
+  },
 ] satisfies MergePoint[];
 
 const 青森 = [] satisfies MergePoint[];
