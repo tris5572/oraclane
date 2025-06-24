@@ -28,7 +28,7 @@ export function MapView() {
           latitude={data.latitude}
           anchor="center"
           onClick={() => setSelectedData({ type: "merge", ...data })}
-          style={{ cursor: "pointer" }}
+          className="point-marker"
         >
           <MergePin data={data} />
         </Marker>
@@ -45,7 +45,7 @@ export function MapView() {
           latitude={data.latitude}
           anchor="center"
           onClick={() => setSelectedData({ type: "branch", ...data })}
-          style={{ cursor: "pointer" }}
+          className="point-marker"
         >
           <BranchPin
             data={data}
