@@ -7,16 +7,17 @@ import {
   ScaleControl,
 } from "react-map-gl/maplibre";
 import "maplibre-gl/dist/maplibre-gl.css";
-import { useSetAtom } from "jotai";
+import { useAtom } from "jotai";
 import { useMemo } from "react";
 import { BRANCH_DATA } from "../assets/branchData";
 import { MERGE_DATA } from "../assets/mergeData";
 import { selectedPointDataAtom } from "../atoms/app";
+import { isEqualPointData } from "../utils/utils";
 import { BranchPin } from "./BranchPin";
 import { MergePin } from "./MergePin";
 
 export function MapView() {
-  const setSelectedData = useSetAtom(selectedPointDataAtom);
+  const [selectedData, setSelectedData] = useAtom(selectedPointDataAtom);
 
   const mergeMarkers = useMemo(
     () =>
@@ -46,10 +47,13 @@ export function MapView() {
           onClick={() => setSelectedData({ type: "branch", ...data })}
           style={{ cursor: "pointer" }}
         >
-          <BranchPin data={data} />
+          <BranchPin
+            data={data}
+            isSelected={selectedData && isEqualPointData(selectedData, data)}
+          />
         </Marker>
       )),
-    [setSelectedData],
+    [setSelectedData, selectedData],
   );
 
   return (
