@@ -9,10 +9,6 @@ type Props = {
    * 大きさ。省略時は `40`
    */
   size?: number;
-  /**
-   * 選択されているかどうかのフラグ
-   */
-  isSelected?: boolean;
 };
 
 // TODO: 道路の種類に応じて色を変える
@@ -23,14 +19,9 @@ const X_SCALE = 0.9;
 /**
  * 車線の分岐を表すピン
  */
-export function BranchPin({ data, size = 40, isSelected }: Props) {
+export function BranchPin({ data, size = 40 }: Props) {
   return (
-    <svg
-      height={size}
-      viewBox="0 0 100 100"
-      transform={`rotate(${data.angle})`}
-      style={{ filter: isSelected ? "drop-shadow(0 0 5px hsl(300, 100%, 50%))" : undefined }}
-    >
+    <svg height={size} viewBox="0 0 100 100" transform={`rotate(${data.angle})`}>
       <title>{data.label}</title>
       {/* 背景 */}
       <path

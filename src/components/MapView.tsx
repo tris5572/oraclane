@@ -45,12 +45,9 @@ export function MapView() {
           latitude={data.latitude}
           anchor="center"
           onClick={() => setSelectedData({ type: "branch", ...data })}
-          className="point-marker"
+          className={`point-marker ${selectedData && isEqualPointData(selectedData, data) ? "selected" : ""}`}
         >
-          <BranchPin
-            data={data}
-            isSelected={selectedData && isEqualPointData(selectedData, data)}
-          />
+          <BranchPin data={data} />
         </Marker>
       )),
     [setSelectedData, selectedData],
