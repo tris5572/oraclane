@@ -28,7 +28,11 @@ export function MapView() {
           latitude={data.latitude}
           anchor="center"
           onClick={() => setSelectedData({ type: "merge", ...data })}
-          className={`point-marker ${selectedData && isEqualPointData(selectedData, data) ? "selected" : ""}`}
+          className={
+            selectedData && isEqualPointData(selectedData, data)
+              ? "point-marker selected"
+              : "point-marker"
+          }
         >
           <MergePin data={data} />
         </Marker>
@@ -45,7 +49,11 @@ export function MapView() {
           latitude={data.latitude}
           anchor="center"
           onClick={() => setSelectedData({ type: "branch", ...data })}
-          className={`point-marker ${selectedData && isEqualPointData(selectedData, data) ? "selected" : ""}`}
+          className={
+            selectedData && isEqualPointData(selectedData, data)
+              ? "point-marker selected"
+              : "point-marker"
+          }
         >
           <BranchPin data={data} />
         </Marker>
