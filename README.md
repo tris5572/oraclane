@@ -1,54 +1,36 @@
-# React + TypeScript + Vite
+# Oraclane
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Oraclane (おらくれーん)は、道路の車線減少・車線分岐を地図上に表示してドライブをサポートする Web アプリです。
 
-Currently, two official plugins are available:
+https://tris5572.github.io/oraclane/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<img width="510" alt="Oraclaneのスクリーンショット" src="https://github.com/user-attachments/assets/925f6302-1a32-4281-bf1d-74712588726c" />
 
-## Expanding the ESLint configuration
+クルマを運転中、突然2車線から1車線になったり、2車線の片方が右折専用レーンになったりして困った経験はないでしょうか。そのような地点を地図上にプロットし、ドライブの計画段階で要注意箇所を把握できるようにしたのがこのアプリです。
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+アプリ名は Oracle（神託）と Lane（車線）を合わせた造語です。
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## 備考
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 表示内容の考え方
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+「走行してきたレーンに対してどのような車線になるか」を基準に表示しています。したがって、交差点内の車線を表示しているわけではありません。
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+また、分岐直後に分岐側の車線が減少するケースでは、車線減少ではなく分岐として表示しています。
+
+### アプリでやらないこと
+
+主にデータ整備のマンパワーの観点から、以下のことはやりません。
+
+- 全国・全地点の網羅。
+- 道路構造変更への即時反映。
+
+
+## 使用技術
+
+- TypeScript
+- React
+- MapLibre GL JS
+
+アプリ自体を GitHub Pages へデプロイしています。
+
