@@ -27,12 +27,26 @@ https://tris5572.github.io/oraclane/
 - 全国・全地点の網羅。
 - 道路構造変更への即時反映。
 
+## 技術・開発面
 
-## 使用技術
+### 使用技術
 
-- TypeScript
-- React
-- MapLibre GL JS
+- [TypeScript](https://www.typescriptlang.org/) - プログラミング言語
+- [React](https://react.dev/) - フレームワーク
+- [Vite](https://vitejs.dev/) - ビルドツール
+- [MapLibre GL JS](https://maplibre.org/) - 地図描画
+- [Jotai](https://jotai.org/) - 状態管理
+- [Biome](https://biomejs.dev/) - コードフォーマット・静的解析
 
-アプリ自体を GitHub Pages へデプロイしています。
+CI/CD は GitHub Actions で構築しており、アプリ自体を GitHub Pages へデプロイしています。
 
+### 開発時のコマンド
+
+```sh
+# ローカル実行
+pnpm dev # または pnpm run dev 
+# lint
+pnpm check
+# lint - 修正
+pnpm fix
+```
