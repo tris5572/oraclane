@@ -1,0 +1,40 @@
+<svg width="360" height="200" xmlns="http://www.w3.org/2000/svg">
+    <!-- 背景 -->
+    <rect x="0" y="0" width="360" height="200" rx="8" fill="hsl(200, 5%, 70%)" />
+
+    <!-- 車線全体 -->
+    <g transform="translate(20, 10)" stroke="hsl(250, 20%, 20%)" fill="none">
+        <path d="M0,0 l0,60 l40,60 l0,60" stroke-width="4" />
+        <path d="M40,0 l0,110" stroke-width="3" stroke-dasharray="20 12" />
+        <path d="M80,0 l0,178" stroke-width="3" stroke-dasharray="20 12" />
+        <path d="M120,0 l0,180" stroke-width="4" />
+        <g transform="translate(40, 0) scale(-1, 1)" stroke="none" fill="hsl(250, 20%, 20%)">
+            <path d="M10,60 l0,-40 l12,0 l0,-10 l10,15 l-10,15 l0,-10 l-5,0 l0,30 z" />
+        </g>
+        <g transform="translate(40, 0)" stroke="none" fill="hsl(250, 20%, 20%)">
+            <path d="M17,60 l0,-35 l-9,0 l13,-15 l13,15 l-9,0 l0,35 " />
+        </g>
+        <g transform="translate(80, 0)" stroke="none" fill="hsl(250, 20%, 20%)">
+            <path d="M10,60 l0,-40 l12,0 l0,-10 l10,15 l-10,15 l0,-10 l-5,0 l0,30 z" />
+        </g>
+    </g>
+
+    <!-- 右矢印 -->
+    <g transform="translate(168, 50)" stroke="none" fill="hsl(250, 5%, 40%)">
+        <path d="M0,40 l30,0 l0,-15 l20,25 l-20,25 l0,-15 l -30,0" />
+    </g>
+
+    <!-- 車線表示 -->
+    <g transform="translate(250, 50)" stroke="hsl(250, 20%, 20%)" fill="none">
+        <path d="M0,0 l0,100 " stroke-width="4" />
+        <path d="M40,0 l0,100" stroke-width="3" stroke-dasharray="18 10" />
+        <path d="M80,0 l0,100 " stroke-width="4" />
+        <g transform="translate(0, 0)" stroke="none" fill="hsl(250, 20%, 20%)">
+            <path d="M20,80 l0,-55 l-9,0 l13,-15 l13,15 l-9,0 l0,55 " />
+            <path d="M20,40 l-5,0 l0,-10 l-10,15 l10,15 l0,-10 l5,0" />
+        </g>
+        <g transform="translate(40, 0)" stroke="none" fill="hsl(250, 20%, 20%)">
+            <path d="M10,80 l0,-60 l12,0 l0,-10 l10,15 l-10,15 l0,-10 l-5,0 l0,50 z" />
+        </g>
+    </g>
+</svg>
