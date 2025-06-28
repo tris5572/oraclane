@@ -403,7 +403,7 @@
       "filter": ["all", ["==", "brunnel", "tunnel"], ["in", "class", "primary", "trunk"]],
       "layout": { "line-join": "round" },
       "paint": {
-        "line-color": "#e9ac77",
+        "line-color": "hsl(30, 100%, 70%)",
         "line-width": { "base": 1.2, "stops": [[5, 0.4], [6, 0.6], [7, 1.5], [20, 22]] }
       }
     },
@@ -479,12 +479,25 @@
       }
     },
     {
-      "id": "tunnel-trunk-primary",
+      "id": "tunnel-trunk",
       "type": "line",
       "metadata": { "mapbox:group": "1444849354174.1904" },
       "source": "openmaptiles",
       "source-layer": "transportation",
       "filter": ["all", ["==", "brunnel", "tunnel"], ["in", "class", "primary", "trunk"]],
+      "layout": { "line-join": "round" },
+      "paint": {
+        "line-color": "hsl(30, 100%, 90%)",
+        "line-width": { "base": 1.2, "stops": [[6.5, 0], [7, 0.5], [20, 18]] }
+      }
+    },
+    {
+      "id": "tunnel-primary",
+      "type": "line",
+      "metadata": { "mapbox:group": "1444849354174.1904" },
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "filter": ["all", ["==", "brunnel", "tunnel"], ["in", "class", "primary"]],
       "layout": { "line-join": "round" },
       "paint": {
         "line-color": "#fff4c6",
@@ -737,7 +750,7 @@
       "filter": ["all", ["!in", "brunnel", "bridge", "tunnel"], ["in", "class", "trunk"]],
       "layout": { "line-cap": "butt", "line-join": "round", "visibility": "visible" },
       "paint": {
-        "line-color": "#e9ac77",
+        "line-color": "hsl(30, 100%, 50%)",
         "line-opacity": { "stops": [[5, 0], [6, 1]] },
         "line-width": { "base": 1.2, "stops": [[5, 0], [6, 0.6], [7, 1.5], [20, 22]] }
       }
@@ -871,7 +884,7 @@
       ],
       "layout": { "line-cap": "round", "line-join": "round", "visibility": "visible" },
       "paint": {
-        "line-color": "#fea",
+        "line-color": "hsl(30, 100%, 80%)",
         "line-width": { "base": 1.2, "stops": [[6.5, 0], [7, 0.5], [20, 18]] }
       }
     },
@@ -1052,12 +1065,25 @@
       }
     },
     {
-      "id": "bridge-trunk-primary-casing",
+      "id": "bridge-trunk-casing",
       "type": "line",
       "metadata": { "mapbox:group": "1444849334699.1902" },
       "source": "openmaptiles",
       "source-layer": "transportation",
-      "filter": ["all", ["==", "brunnel", "bridge"], ["in", "class", "primary", "trunk"]],
+      "filter": ["all", ["==", "brunnel", "bridge"], ["in", "class", "trunk"]],
+      "layout": { "line-join": "round" },
+      "paint": {
+        "line-color": "hsl(30, 100%, 80%)",
+        "line-width": { "base": 1.2, "stops": [[5, 0.4], [6, 0.6], [7, 1.5], [20, 26]] }
+      }
+    },
+    {
+      "id": "bridge-primary-casing",
+      "type": "line",
+      "metadata": { "mapbox:group": "1444849334699.1902" },
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "filter": ["all", ["==", "brunnel", "bridge"], ["in", "class", "primary"]],
       "layout": { "line-join": "round" },
       "paint": {
         "line-color": "hsl(28, 76%, 67%)",
@@ -1154,12 +1180,25 @@
       }
     },
     {
-      "id": "bridge-trunk-primary",
+      "id": "bridge-trunk",
       "type": "line",
       "metadata": { "mapbox:group": "1444849334699.1902" },
       "source": "openmaptiles",
       "source-layer": "transportation",
-      "filter": ["all", ["==", "brunnel", "bridge"], ["in", "class", "primary", "trunk"]],
+      "filter": ["all", ["==", "brunnel", "bridge"], ["in", "class", "trunk"]],
+      "layout": { "line-join": "round" },
+      "paint": {
+        "line-color": "hsl(30, 100%, 80%)",
+        "line-width": { "base": 1.2, "stops": [[6.5, 0], [7, 0.5], [20, 18]] }
+      }
+    },
+    {
+      "id": "bridge-primary",
+      "type": "line",
+      "metadata": { "mapbox:group": "1444849334699.1902" },
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "filter": ["all", ["==", "brunnel", "bridge"], ["in", "class", "primary"]],
       "layout": { "line-join": "round" },
       "paint": {
         "line-color": "#fea",
