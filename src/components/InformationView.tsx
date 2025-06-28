@@ -23,9 +23,7 @@ function DataInner({ data }: { data: PointDataType }) {
     <>
       <h2>{data.label}</h2>
       {data.type === "merge" ? <MergeImage data={data} /> : <BranchImage data={data} />}
-      {data.comments?.map((line) => (
-        <p key={line}>{line}</p>
-      ))}
+      {data.comments?.map((line) => line !== "" && <p key={line}>{line}</p>)}
     </>
   );
 }
