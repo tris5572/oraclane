@@ -5,12 +5,14 @@ import {
   NavigationControl,
   Map as ReactMap,
   ScaleControl,
+  type StyleSpecification,
 } from "react-map-gl/maplibre";
 import "maplibre-gl/dist/maplibre-gl.css";
 import { useAtom } from "jotai";
 import { useMemo } from "react";
 import { BRANCH_DATA } from "../assets/branchData";
 import { MERGE_DATA } from "../assets/mergeData";
+import styleJson from "../assets/style.json";
 import { selectedPointDataAtom } from "../atoms/app";
 import { isEqualPointData } from "../utils/utils";
 import { BranchPin } from "./BranchPin";
@@ -68,7 +70,7 @@ export function MapView() {
         longitude: 139.6499634,
         zoom: 11,
       }}
-      mapStyle="https://tile.openstreetmap.jp/styles/osm-bright-ja/style.json"
+      mapStyle={styleJson as StyleSpecification}
       attributionControl={false}
     >
       {mergeMarkers}
