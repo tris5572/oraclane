@@ -2,6 +2,22 @@ import type { MergePoint } from "../types/types";
 
 const 北海道 = [
   {
+    label: "国道235号 下り 豊川",
+    longitude: 142.0079416,
+    latitude: 42.5326023,
+    angle: 140,
+    merge: "right",
+    comments: ["短区間だけ2車線。"],
+  },
+  {
+    label: "国道235号 上り 豊川",
+    longitude: 141.9903919,
+    latitude: 42.5442852,
+    angle: 320,
+    merge: "right",
+    comments: ["短区間だけ2車線。"],
+  },
+  {
     label: "国道36号 上り 石山",
     longitude: 141.3192576,
     latitude: 42.5266319,

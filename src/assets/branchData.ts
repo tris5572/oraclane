@@ -4,6 +4,30 @@ import type { BranchPoint } from "../types/types";
 
 const 北海道 = [
   {
+    label: "沼の端",
+    longitude: 141.6983745,
+    latitude: 42.6696968,
+    angle: 65,
+    lanes: ["←", "↑", "↑", "→"],
+    comments: ["4車線が実質2車線になる。"],
+  },
+  {
+    label: "苫小牧・元中野4",
+    longitude: 141.6190803,
+    latitude: 42.6432949,
+    angle: 230,
+    lanes: ["↑", "↑", "↑", "→"],
+    comments: ["4車線の一番右の車線が右折専用。"],
+  },
+  {
+    label: "国道36号 下り 元中野4",
+    longitude: 141.6172618,
+    latitude: 42.6424324,
+    angle: 50,
+    lanes: ["↖", "↖↑", "↑", "↑"],
+    comments: ["国道36号は左寄り。"],
+  },
+  {
     label: "国道36号 上り 苫小牧駅前",
     longitude: 141.6013965,
     latitude: 42.6328123,
