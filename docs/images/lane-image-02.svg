@@ -1,0 +1,43 @@
+<svg width="360" height="200" xmlns="http://www.w3.org/2000/svg">
+    <!-- 背景 -->
+    <rect x="0" y="0" width="360" height="200" rx="8" fill="hsl(200, 5%, 70%)" />
+
+    <!-- 車線全体 -->
+    <g transform="translate(20, 10)" stroke="hsl(250, 20%, 20%)" fill="none">
+        <path d="M0,0 l0,180" stroke-width="4" />
+        <path d="M40,0 l0,20 l40,40 l0,20 l40,-40" stroke-width="4" />
+        <path d="M40,40 l0,140" stroke-width="3" stroke-dasharray="20 12" />
+        <path d="M120,90 l-40,40 l0,50" stroke-width="4" />
+        <g transform="translate(0, 0)" stroke="none" fill="hsl(250, 20%, 20%)">
+            <path d="M17,60 l0,-35 l-9,0 l13,-15 l13,15 l-9,0 l0,35 " />
+        </g>
+        <g transform="translate(40, 50) scale(0.5) rotate(-45)" stroke="none" fill="hsl(250, 20%, 20%)">
+            <path d="M17,60 l0,-35 l-9,0 l13,-15 l13,15 l-9,0 l0,35 " />
+        </g>
+        <g transform="translate(40, 70) scale(0.5) rotate(-45)" stroke="none" fill="hsl(250, 20%, 20%)">
+            <path d="M17,60 l0,-35 l-9,0 l13,-15 l13,15 l-9,0 l0,35 " />
+        </g>
+        <g transform="translate(110, 45) rotate(45)" stroke="none" fill="hsl(250, 20%, 20%)">
+            <path d="M17,60 l0,-35 l-9,0 l13,-15 l13,15 l-9,0 l0,35 " />
+        </g>
+    </g>
+
+    <!-- 右矢印 -->
+    <g transform="translate(168, 50)" stroke="none" fill="hsl(250, 5%, 40%)">
+        <path d="M0,40 l30,0 l0,-15 l20,25 l-20,25 l0,-15 l -30,0" />
+    </g>
+
+    <!-- 車線表示 -->
+    <g transform="translate(250, 50)" stroke="hsl(250, 20%, 20%)" fill="none">
+        <path d="M0,0 l0,100 " stroke-width="4" />
+        <path d="M40,0 l0,100" stroke-width="3" stroke-dasharray="18 10" />
+        <path d="M80,0 l0,100 " stroke-width="4" />
+        <g transform="translate(0, 30)" stroke="none" fill="hsl(250, 20%, 20%)">
+            <path d="M17,60 l0,-60 l-9,0 l13,-15 l13,15 l-9,0 l0,60 " />
+        </g>
+        <g transform="translate(35, 20)" stroke="none" fill="hsl(250, 20%, 20%)">
+            <path d="M22,0 l18,0 l0,18" />
+            <path d="M20,70 l0,-50 l12,-12" fill="none" stroke="hsl(250, 20%, 20%)" stroke-width="8" />
+        </g>
+    </g>
+</svg>
