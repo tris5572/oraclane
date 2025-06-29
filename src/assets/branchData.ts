@@ -4,6 +4,22 @@ import type { BranchPoint } from "../types/types";
 
 const 北海道 = [
   {
+    label: "国道40号 下り 稚内",
+    longitude: 141.6762811,
+    latitude: 45.4168739,
+    angle: 0,
+    lanes: ["←", "↑→"],
+    comments: [""],
+  },
+  {
+    label: "国道238号 潮見",
+    longitude: 141.7072016,
+    latitude: 45.394964,
+    angle: 270,
+    lanes: ["←", "↑→"],
+    comments: [""],
+  },
+  {
     label: "沼の端",
     longitude: 141.6983745,
     latitude: 42.6696968,

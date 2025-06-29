@@ -10,6 +10,22 @@ const 北海道 = [
     comments: [""],
   },
   {
+    label: "国道238号 稚内空港",
+    longitude: 141.7981446,
+    latitude: 45.4060117,
+    angle: 70,
+    merge: "right",
+    comments: [""],
+  },
+  {
+    label: "国道232号 稚内市リサイクルセンター",
+    longitude: 141.7144731,
+    latitude: 45.3746961,
+    angle: 120,
+    merge: "right",
+    comments: [""],
+  },
+  {
     label: "国道238号 上り 網走",
     longitude: 144.2159575,
     latitude: 44.0108542,
