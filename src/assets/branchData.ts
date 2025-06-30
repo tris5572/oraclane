@@ -4,6 +4,90 @@ import type { BranchPoint } from "../types/types";
 
 const 北海道 = [
   {
+    label: "国道40号 下り 稚内",
+    longitude: 141.6762811,
+    latitude: 45.4168739,
+    angle: 0,
+    lanes: ["←", "↑→"],
+    comments: [""],
+  },
+  {
+    label: "国道238号 潮見",
+    longitude: 141.7072016,
+    latitude: 45.394964,
+    angle: 270,
+    lanes: ["←", "↑→"],
+    comments: [""],
+  },
+  {
+    label: "国道38号 上り 幣舞橋",
+    longitude: 144.3852291,
+    latitude: 42.9817924,
+    angle: 350,
+    lanes: ["←↑", "↑", "↗"],
+    comments: [""],
+  },
+  {
+    label: "国道38号 下り 幣舞ロータリー",
+    longitude: 144.3857896,
+    latitude: 42.9804968,
+    angle: 165,
+    lanes: ["←↑", "↑", "↗"],
+    comments: [
+      "幣舞（ぬさない）橋の南にある巨大ロータリー。通行には要注意。",
+      "道道113号は左2車線。",
+      "右車線は右折とUターン。",
+    ],
+  },
+  {
+    label: "国道38号 釧路西IC",
+    longitude: 144.3256572,
+    latitude: 43.0364943,
+    angle: 90,
+    lanes: ["↑", "→"],
+    comments: ["直進は道東道。"],
+  },
+  {
+    label: "道道148号 釧路西IC",
+    longitude: 144.3265718,
+    latitude: 43.0359452,
+    angle: 290,
+    lanes: ["←↑", "→"],
+    comments: [""],
+  },
+  {
+    label: "新富士通り 西方面 市場",
+    longitude: 144.3406159,
+    latitude: 43.0045808,
+    angle: 290,
+    lanes: ["↑", "→"],
+    comments: ["この手前の交差点もクランク状で、右車線を走るのはキツい。"],
+  },
+  {
+    label: "沼の端",
+    longitude: 141.6983745,
+    latitude: 42.6696968,
+    angle: 65,
+    lanes: ["←", "↑", "↑", "→"],
+    comments: ["4車線が実質2車線になる。"],
+  },
+  {
+    label: "苫小牧・元中野4",
+    longitude: 141.6190803,
+    latitude: 42.6432949,
+    angle: 230,
+    lanes: ["↑", "↑", "↑", "→"],
+    comments: ["4車線の一番右の車線が右折専用。"],
+  },
+  {
+    label: "国道36号 下り 元中野4",
+    longitude: 141.6172618,
+    latitude: 42.6424324,
+    angle: 50,
+    lanes: ["↖", "↖↑", "↑", "↑"],
+    comments: ["国道36号は左寄り。"],
+  },
+  {
     label: "国道36号 上り 苫小牧駅前",
     longitude: 141.6013965,
     latitude: 42.6328123,
@@ -45,7 +129,24 @@ const 北海道 = [
   },
 ] satisfies BranchPoint[];
 
-const 青森 = [] satisfies BranchPoint[];
+const 青森 = [
+  {
+    label: "国道4号 上り 合浦",
+    longitude: 140.7800075,
+    latitude: 40.8273403,
+    angle: 75,
+    lanes: ["↖", "↑", "↑"],
+    comments: [""],
+  },
+  {
+    label: "県道44号 宮田",
+    longitude: 140.836122,
+    latitude: 40.8458416,
+    angle: 310,
+    lanes: ["←", "↑", "→"],
+    comments: [""],
+  },
+] satisfies BranchPoint[];
 
 const 岩手 = [] satisfies BranchPoint[];
 
@@ -57,7 +158,19 @@ const 山形 = [] satisfies BranchPoint[];
 
 const 福島 = [] satisfies BranchPoint[];
 
-const 茨城 = [] satisfies BranchPoint[];
+const 茨城 = [
+  {
+    label: "県道228号 中田町",
+    longitude: 139.7106832,
+    latitude: 36.1472875,
+    angle: 130,
+    lanes: ["←↑", "→"],
+    comments: [
+      "手前の交差点付近から、右折車線が生える。",
+      "直進後は一瞬だけ2車線ですぐ右車線に合流して1車線になる。",
+    ],
+  },
+] satisfies BranchPoint[];
 
 const 栃木 = [] satisfies BranchPoint[];
 

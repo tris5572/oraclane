@@ -2,6 +2,78 @@ import type { MergePoint } from "../types/types";
 
 const 北海道 = [
   {
+    label: "国道244号 下り 藻琴",
+    longitude: 144.3236589,
+    latitude: 43.9666754,
+    angle: 120,
+    merge: "left",
+    comments: [""],
+  },
+  {
+    label: "国道238号 稚内空港",
+    longitude: 141.7981446,
+    latitude: 45.4060117,
+    angle: 70,
+    merge: "right",
+    comments: [""],
+  },
+  {
+    label: "国道232号 稚内市リサイクルセンター",
+    longitude: 141.7144731,
+    latitude: 45.3746961,
+    angle: 120,
+    merge: "right",
+    comments: [""],
+  },
+  {
+    label: "国道238号 上り 網走",
+    longitude: 144.2159575,
+    latitude: 44.0108542,
+    angle: 200,
+    merge: "right",
+    comments: [""],
+  },
+  {
+    label: "国道44号 下り 釧路の東",
+    longitude: 144.437044,
+    latitude: 42.9964338,
+    angle: 100,
+    merge: "right",
+    comments: [""],
+  },
+  {
+    label: "釧路第四埠頭",
+    longitude: 144.3138313,
+    latitude: 43.0052491,
+    angle: 280,
+    merge: "left",
+    comments: [""],
+  },
+  {
+    label: "国道38号 上り 釧路新野",
+    longitude: 144.2358676,
+    latitude: 43.0000964,
+    angle: 260,
+    merge: "right",
+    comments: [""],
+  },
+  {
+    label: "国道235号 下り 豊川",
+    longitude: 142.0079416,
+    latitude: 42.5326023,
+    angle: 140,
+    merge: "right",
+    comments: ["短区間だけ2車線。"],
+  },
+  {
+    label: "国道235号 上り 豊川",
+    longitude: 141.9903919,
+    latitude: 42.5442852,
+    angle: 320,
+    merge: "right",
+    comments: ["短区間だけ2車線。"],
+  },
+  {
     label: "国道36号 上り 石山",
     longitude: 141.3192576,
     latitude: 42.5266319,
@@ -99,7 +171,56 @@ const 北海道 = [
   },
 ] satisfies MergePoint[];
 
-const 青森 = [] satisfies MergePoint[];
+const 青森 = [
+  {
+    label: "国道4号 青森東バイパス 上り 宮田",
+    longitude: 140.8358297,
+    latitude: 40.8466251,
+    angle: 40,
+    merge: "right",
+    comments: [""],
+  },
+  {
+    label: "国道7号 青森西バイパス 上り 戸門",
+    longitude: 140.6437889,
+    latitude: 40.8141905,
+    angle: 250,
+    merge: "left",
+    comments: [""],
+  },
+  {
+    label: "国道7号 青森環状道路 上り 安田西",
+    longitude: 140.7025427,
+    latitude: 40.7991149,
+    angle: 300,
+    merge: "right",
+    comments: [""],
+  },
+  {
+    label: "県道19号 下り おいらせ町松原",
+    longitude: 141.4562675,
+    latitude: 40.6120589,
+    angle: 340,
+    merge: "right",
+    comments: [""],
+  },
+  {
+    label: "国道45号 上り 八戸北IC",
+    longitude: 141.4346355,
+    latitude: 40.5603802,
+    angle: 0,
+    merge: "right",
+    comments: [""],
+  },
+  {
+    label: "国道454号 上り 八戸尻内",
+    longitude: 141.4248186,
+    latitude: 40.5173268,
+    angle: 270,
+    merge: "right",
+    comments: [""],
+  },
+] satisfies MergePoint[];
 
 const 岩手 = [] satisfies MergePoint[];
 
@@ -111,7 +232,24 @@ const 山形 = [] satisfies MergePoint[];
 
 const 福島 = [] satisfies MergePoint[];
 
-const 茨城 = [] satisfies MergePoint[];
+const 茨城 = [
+  {
+    label: "国道4号 下り 利根川橋の北",
+    longitude: 139.7121692,
+    latitude: 36.1478119,
+    angle: 40,
+    merge: "right",
+    comments: ["利根川を渡って地平に降りる途中で1車線になる。"],
+  },
+  {
+    label: "県道56号 中田町",
+    longitude: 139.71255,
+    latitude: 36.147047,
+    angle: 80,
+    merge: "right",
+    comments: ["一瞬だけ2車線だが、すぐ右に合流して1車線になる。"],
+  },
+] satisfies MergePoint[];
 
 const 栃木 = [] satisfies MergePoint[];
 
