@@ -232,7 +232,24 @@ const 山形 = [] satisfies MergePoint[];
 
 const 福島 = [] satisfies MergePoint[];
 
-const 茨城 = [] satisfies MergePoint[];
+const 茨城 = [
+  {
+    label: "国道4号 下り 利根川橋の北",
+    longitude: 139.7121692,
+    latitude: 36.1478119,
+    angle: 40,
+    merge: "right",
+    comments: ["利根川を渡って地平に降りる途中で1車線になる。"],
+  },
+  {
+    label: "県道56号 中田町",
+    longitude: 139.71255,
+    latitude: 36.147047,
+    angle: 80,
+    merge: "right",
+    comments: ["一瞬だけ2車線だが、すぐ右に合流して1車線になる。"],
+  },
+] satisfies MergePoint[];
 
 const 栃木 = [] satisfies MergePoint[];
 

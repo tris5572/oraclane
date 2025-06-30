@@ -158,7 +158,19 @@ const 山形 = [] satisfies BranchPoint[];
 
 const 福島 = [] satisfies BranchPoint[];
 
-const 茨城 = [] satisfies BranchPoint[];
+const 茨城 = [
+  {
+    label: "県道228号 中田町",
+    longitude: 139.7106832,
+    latitude: 36.1472875,
+    angle: 130,
+    lanes: ["←↑", "→"],
+    comments: [
+      "手前の交差点付近から、右折車線が生える。",
+      "直進後は一瞬だけ2車線ですぐ右車線に合流して1車線になる。",
+    ],
+  },
+] satisfies BranchPoint[];
 
 const 栃木 = [] satisfies BranchPoint[];
 
