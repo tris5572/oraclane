@@ -171,7 +171,32 @@ const 北海道 = [
   },
 ] satisfies MergePoint[];
 
-const 青森 = [] satisfies MergePoint[];
+const 青森 = [
+  {
+    label: "国道4号 青森東バイパス 上り 宮田",
+    longitude: 140.8358297,
+    latitude: 40.8466251,
+    angle: 40,
+    merge: "right",
+    comments: [""],
+  },
+  {
+    label: "国道7号 青森西バイパス 上り 戸門",
+    longitude: 140.6437889,
+    latitude: 40.8141905,
+    angle: 250,
+    merge: "left",
+    comments: [""],
+  },
+  {
+    label: "国道7号 青森環状道路 上り 安田西",
+    longitude: 140.7025427,
+    latitude: 40.7991149,
+    angle: 300,
+    merge: "right",
+    comments: [""],
+  },
+] satisfies MergePoint[];
 
 const 岩手 = [] satisfies MergePoint[];
 

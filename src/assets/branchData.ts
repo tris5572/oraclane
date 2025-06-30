@@ -129,7 +129,24 @@ const 北海道 = [
   },
 ] satisfies BranchPoint[];
 
-const 青森 = [] satisfies BranchPoint[];
+const 青森 = [
+  {
+    label: "国道4号 上り 合浦",
+    longitude: 140.7800075,
+    latitude: 40.8273403,
+    angle: 75,
+    lanes: ["↖", "↑", "↑"],
+    comments: [""],
+  },
+  {
+    label: "県道44号 宮田",
+    longitude: 140.836122,
+    latitude: 40.8458416,
+    angle: 310,
+    lanes: ["←", "↑", "→"],
+    comments: [""],
+  },
+] satisfies BranchPoint[];
 
 const 岩手 = [] satisfies BranchPoint[];
 
