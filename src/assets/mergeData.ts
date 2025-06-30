@@ -196,6 +196,30 @@ const 青森 = [
     merge: "right",
     comments: [""],
   },
+  {
+    label: "県道19号 下り おいらせ町松原",
+    longitude: 141.4562675,
+    latitude: 40.6120589,
+    angle: 340,
+    merge: "right",
+    comments: [""],
+  },
+  {
+    label: "国道45号 上り 八戸北IC",
+    longitude: 141.4346355,
+    latitude: 40.5603802,
+    angle: 0,
+    merge: "right",
+    comments: [""],
+  },
+  {
+    label: "国道454号 上り 八戸尻内",
+    longitude: 141.4248186,
+    latitude: 40.5173268,
+    angle: 270,
+    merge: "right",
+    comments: [""],
+  },
 ] satisfies MergePoint[];
 
 const 岩手 = [] satisfies MergePoint[];
