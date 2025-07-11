@@ -35,6 +35,7 @@ export function MapView() {
               ? "point-marker selected"
               : "point-marker"
           }
+          rotation={data.angle}
         >
           <MergePin data={data} />
         </Marker>
@@ -56,6 +57,7 @@ export function MapView() {
               ? "point-marker selected"
               : "point-marker"
           }
+          rotation={data.angle}
         >
           <BranchPin data={data} />
         </Marker>
