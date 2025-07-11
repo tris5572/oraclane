@@ -22,7 +22,7 @@ type Props = {
  */
 export function MergePin({ data, size = 40, onlyFront }: Props) {
   return (
-    <svg height={size} viewBox="0 0 100 100" transform={`rotate(${data.angle})`}>
+    <svg height={size} viewBox="0 0 100 100">
       <title>{data.label}</title>
       {/* 背景 */}
       {!onlyFront && (

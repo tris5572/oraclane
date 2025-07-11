@@ -21,7 +21,7 @@ const X_SCALE = 0.9;
  */
 export function BranchPin({ data, size = 40 }: Props) {
   return (
-    <svg height={size} viewBox="0 0 100 100" transform={`rotate(${data.angle})`}>
+    <svg height={size} viewBox="0 0 100 100">
       <title>{data.label}</title>
       {/* 背景 */}
       <path
