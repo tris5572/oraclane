@@ -271,7 +271,24 @@ const 埼玉 = [
   },
 ] satisfies BranchPoint[];
 
-const 千葉 = [] satisfies BranchPoint[];
+const 千葉 = [
+  {
+    label: "国道14号 下り 千葉市役所",
+    longitude: 140.1014408,
+    latitude: 35.6155297,
+    angle: 140,
+    lanes: ["↖", "↑", "↑"],
+    comments: ["左車線は側道。"],
+  },
+  {
+    label: "国道14号 上り 千葉市役所",
+    longitude: 140.112226,
+    latitude: 35.6034223,
+    angle: 320,
+    lanes: ["↖", "↑", "↑"],
+    comments: ["左車線は側道。"],
+  },
+] satisfies BranchPoint[];
 
 const 東京 = [
   {

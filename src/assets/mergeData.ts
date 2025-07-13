@@ -403,7 +403,17 @@ const 埼玉 = [
   },
 ] satisfies MergePoint[];
 
-const 千葉 = [] satisfies MergePoint[];
+const 千葉 = [
+  {
+    label: "国道357号 下り 蘇我",
+    longitude: 140.1208279,
+    latitude: 35.5934316,
+    angle: 160,
+    merge: "left",
+    multi: true,
+    comments: ["ハーバーシティ方面の右折2車線の先、京葉線をくぐる手前で左側2車線に減少する。"],
+  },
+] satisfies MergePoint[];
 
 const 東京 = [
   {
