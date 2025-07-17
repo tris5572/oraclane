@@ -403,7 +403,41 @@ const 埼玉 = [
   },
 ] satisfies MergePoint[];
 
-const 千葉 = [] satisfies MergePoint[];
+const 千葉 = [
+  {
+    label: "国道464号 北千葉道路 上り 吉高",
+    longitude: 140.2209681,
+    latitude: 35.7840247,
+    angle: 100,
+    merge: "left",
+    comments: ["ここから1車線。"],
+  },
+  {
+    label: "国道464号 北千葉道路 上り 千葉ニュータウン",
+    longitude: 140.1046836,
+    latitude: 35.795788,
+    angle: 230,
+    merge: "left",
+    comments: ["線路脇の道から土手の上に上がる手前で1車線になる。"],
+  },
+  {
+    label: "国道464号 北千葉道路 上り 鎌ケ谷消防署前",
+    longitude: 140.0074938,
+    latitude: 35.783892,
+    angle: 270,
+    merge: "left",
+    comments: ["現在の終点近くで1車線になる。"],
+  },
+  {
+    label: "国道357号 下り 蘇我",
+    longitude: 140.1208279,
+    latitude: 35.5934316,
+    angle: 160,
+    merge: "left",
+    multi: true,
+    comments: ["ハーバーシティ方面の右折2車線の先、京葉線をくぐる手前で左側2車線に減少する。"],
+  },
+] satisfies MergePoint[];
 
 const 東京 = [
   {
