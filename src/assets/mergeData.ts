@@ -405,6 +405,25 @@ const 埼玉 = [
 
 const 千葉 = [
   {
+    label: "国道356号 上り 印西",
+    longitude: 140.145067,
+    latitude: 35.8341043,
+    angle: 280,
+    merge: "right",
+    comments: [
+      "短距離のみ2車線。",
+      "右1車線に絞り込まれた直後、交差点は左折・直進・右折の3レーン。",
+    ],
+  },
+  {
+    label: "国道356号 下り 印西",
+    longitude: 140.1546264,
+    latitude: 35.8342261,
+    angle: 60,
+    merge: "left",
+    comments: ["短距離のみ2車線。"],
+  },
+  {
     label: "国道464号 北千葉道路 上り 吉高",
     longitude: 140.2209681,
     latitude: 35.7840247,
