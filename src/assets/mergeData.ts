@@ -401,6 +401,27 @@ const 埼玉 = [
     angle: 260,
     merge: "left",
   },
+  {
+    label: "県道67号 さくら通り 下り 吉川",
+    longitude: 139.8463333,
+    latitude: 35.8860465,
+    angle: 355,
+    merge: "right",
+  },
+  {
+    label: "三郷中央駅 南",
+    longitude: 139.8786378,
+    latitude: 35.8217539,
+    angle: 80,
+    merge: "left",
+  },
+  {
+    label: "三郷中央駅 南西",
+    longitude: 139.8752743,
+    latitude: 35.8205632,
+    angle: 260,
+    merge: "right",
+  },
 ] satisfies MergePoint[];
 
 const 千葉 = [

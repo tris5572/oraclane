@@ -291,6 +291,22 @@ const 埼玉 = [
       "左車線が側道から国道122号岩槻街道。",
     ],
   },
+  {
+    label: "県道67号 上り 三郷IC出口(西)",
+    longitude: 139.8520625,
+    latitude: 35.8440439,
+    angle: 180,
+    lanes: ["←", "↑→"],
+    comments: ["左折専用レーン。"],
+  },
+  {
+    label: "県道54号 松戸草加線 鷹野小学校前",
+    longitude: 139.8764706,
+    latitude: 35.8023753,
+    angle: 90,
+    lanes: ["←", "↑→"],
+    comments: ["左折専用レーン。", "直進後、右→左のクランクになっているので速度注意。"],
+  },
 ] satisfies BranchPoint[];
 
 const 千葉 = [
