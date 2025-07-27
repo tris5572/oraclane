@@ -405,6 +405,22 @@ const 埼玉 = [
 
 const 千葉 = [
   {
+    label: "都市軸道路 上り おおたかの森西",
+    longitude: 139.9174091,
+    latitude: 35.8733702,
+    angle: 270,
+    merge: "left",
+    comments: [""],
+  },
+  {
+    label: "都市軸道路 下り おおたかの森",
+    longitude: 139.9300879,
+    latitude: 35.8777774,
+    angle: 70,
+    merge: "left",
+    comments: [""],
+  },
+  {
     label: "国道356号 上り 印西",
     longitude: 140.145067,
     latitude: 35.8341043,

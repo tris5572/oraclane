@@ -295,6 +295,14 @@ const 埼玉 = [
 
 const 千葉 = [
   {
+    label: "県道5号 松戸野田線 下り 流山IC",
+    longitude: 139.9027991,
+    latitude: 35.8816276,
+    angle: 340,
+    lanes: ["←", "↑"],
+    comments: [""],
+  },
+  {
     label: "国道14号 下り 千葉市役所",
     longitude: 140.1014408,
     latitude: 35.6155297,
