@@ -176,6 +176,17 @@ const 栃木 = [] satisfies BranchPoint[];
 
 const 群馬 = [
   {
+    label: "国道18号 上り 君が代橋",
+    longitude: 138.9873773,
+    latitude: 36.3321278,
+    angle: 60,
+    lanes: ["↖", "↗"],
+    comments: [
+      "右車線は国道17号上り東京方面。",
+      "左車線は橋上で2車線になり、左が国道17号下り前橋・新潟方面、右が直進で高崎市街方面。",
+    ],
+  },
+  {
     label: "国道254号 下り 富岡",
     longitude: 138.8597685,
     latitude: 36.2485389,
