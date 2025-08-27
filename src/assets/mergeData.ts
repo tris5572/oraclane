@@ -697,12 +697,12 @@ const 長野 = [
     comments: [""],
   },
   {
-    label: "国道142号 上り 菅沼",
-    longitude: 138.9505371,
-    latitude: 35.3485457,
-    angle: 30,
-    merge: "left",
-    comments: ["道の駅ふじおやまを過ぎ、菅沼交差点の先で1車線になる。"],
+    label: "国道142・246号 下り 佐久南",
+    longitude: 138.4290272,
+    latitude: 36.2409645,
+    angle: 295,
+    merge: "right",
+    comments: ["佐久南ICと道の駅ヘルシーテラス佐久南を過ぎた後、右1車線になる。"],
   },
 ] satisfies MergePoint[];
 
@@ -710,12 +710,12 @@ const 岐阜 = [] satisfies MergePoint[];
 
 const 静岡 = [
   {
-    label: "国道142・246号 下り 佐久南",
-    longitude: 138.4290272,
-    latitude: 36.2409645,
-    angle: 295,
-    merge: "right",
-    comments: ["佐久南ICと道の駅ヘルシーテラス佐久南を過ぎた後、右1車線になる。"],
+    label: "国道142号 上り 菅沼",
+    longitude: 138.9505371,
+    latitude: 35.3485457,
+    angle: 30,
+    merge: "left",
+    comments: ["道の駅ふじおやまを過ぎ、菅沼交差点の先で1車線になる。"],
   },
 ] satisfies MergePoint[];
 
