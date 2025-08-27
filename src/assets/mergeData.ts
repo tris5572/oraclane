@@ -289,6 +289,14 @@ const 群馬 = [
     merge: "left",
     comments: ["北関東道をくぐる手前で1車線になる。"],
   },
+  {
+    label: "国道17号 新町バイパス 上り 新町",
+    longitude: 139.0998906,
+    latitude: 36.275891,
+    angle: 110,
+    merge: "left",
+    comments: ["関越道をくぐった先、左の1車線に絞り込まれる。"],
+  },
 ] satisfies MergePoint[];
 
 const 埼玉 = [
