@@ -648,7 +648,35 @@ const 福井 = [] satisfies BranchPoint[];
 
 const 山梨 = [] satisfies BranchPoint[];
 
-const 長野 = [] satisfies BranchPoint[];
+const 長野 = [
+  {
+    label: "国道254号 上り 中込",
+    longitude: 138.475408,
+    latitude: 36.2315278,
+    angle: 45,
+    lanes: ["↑", "→"],
+    comments: [""],
+  },
+  {
+    label: "国道254号 下り 野沢本町",
+    longitude: 138.4668034,
+    latitude: 36.2262995,
+    angle: 245,
+    lanes: ["↑", "→"],
+    comments: ["国道254号 諏訪方面は右車線から右折。"],
+  },
+  {
+    label: "国道142・254号 上り 跡部",
+    longitude: 138.455911,
+    latitude: 36.2322452,
+    angle: 110,
+    lanes: ["←", "↑→"],
+    comments: [
+      "左レーンは交差点を過ぎてすぐ絞り込まれる。",
+      "右車線からの右折レーンは2車線生える。",
+    ],
+  },
+] satisfies BranchPoint[];
 
 const 岐阜 = [] satisfies BranchPoint[];
 
