@@ -174,7 +174,16 @@ const 茨城 = [
 
 const 栃木 = [] satisfies BranchPoint[];
 
-const 群馬 = [] satisfies BranchPoint[];
+const 群馬 = [
+  {
+    label: "国道254号 下り 富岡",
+    longitude: 138.8597685,
+    latitude: 36.2485389,
+    angle: 205,
+    lanes: ["↑", "→"],
+    comments: [""],
+  },
+] satisfies BranchPoint[];
 
 const 埼玉 = [
   {
