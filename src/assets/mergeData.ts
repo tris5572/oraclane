@@ -681,6 +681,22 @@ const 山梨 = [] satisfies MergePoint[];
 
 const 長野 = [
   {
+    label: "国道141号 小諸",
+    longitude: 138.4606263,
+    latitude: 36.3048042,
+    angle: 310,
+    merge: "left",
+    comments: [""],
+  },
+  {
+    label: "国道141号 佐久 臼田",
+    longitude: 138.4789002,
+    latitude: 36.1933624,
+    angle: 150,
+    merge: "right",
+    comments: [""],
+  },
+  {
     label: "国道142号 上り 菅沼",
     longitude: 138.9505371,
     latitude: 35.3485457,
