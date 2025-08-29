@@ -696,6 +696,14 @@ const 長野 = [
       "右車線からの右折レーンは2車線生える。",
     ],
   },
+  {
+    label: "国道18号 上り 粟佐北",
+    longitude: 138.123091,
+    latitude: 36.541394,
+    angle: 210,
+    lanes: ["↑", "→"],
+    comments: [""],
+  },
 ] satisfies BranchPoint[];
 
 const 岐阜 = [] satisfies BranchPoint[];
