@@ -704,6 +704,14 @@ const 長野 = [
     merge: "right",
     comments: ["佐久南ICと道の駅ヘルシーテラス佐久南を過ぎた後、右1車線になる。"],
   },
+  {
+    label: "県道65号 上田丸子線 小島",
+    longitude: 138.209007,
+    latitude: 36.377563,
+    angle: 200,
+    merge: "left",
+    comments: [""],
+  },
 ] satisfies MergePoint[];
 
 const 岐阜 = [] satisfies MergePoint[];
