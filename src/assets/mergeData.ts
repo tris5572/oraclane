@@ -361,6 +361,22 @@ const 埼玉 = [
     ],
   },
   {
+    label: "県道35号 産業道路 二十三夜",
+    longitude: 139.687067,
+    latitude: 35.848,
+    angle: 350,
+    merge: "right",
+    comments: [""],
+  },
+  {
+    label: "南浦和越谷線 坂下橋",
+    longitude: 139.689543,
+    latitude: 35.847135,
+    angle: 255,
+    merge: "left",
+    comments: [""],
+  },
+  {
     label: "国道17号 熊谷バイパス 上り 上之(南)",
     longitude: 139.4210154,
     latitude: 36.1506076,
