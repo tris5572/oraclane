@@ -377,6 +377,14 @@ const 埼玉 = [
     comments: [""],
   },
   {
+    label: "県道35号 産業道路 川口芝",
+    longitude: 139.70022,
+    latitude: 35.834017,
+    angle: 145,
+    merge: "left",
+    comments: [""],
+  },
+  {
     label: "国道17号 熊谷バイパス 上り 上之(南)",
     longitude: 139.4210154,
     latitude: 36.1506076,
