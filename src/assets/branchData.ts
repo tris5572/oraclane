@@ -160,6 +160,14 @@ const 福島 = [] satisfies BranchPoint[];
 
 const 茨城 = [
   {
+    label: "国道6号 千代田石岡バイパス 下り 中貫工業団地入口",
+    longitude: 140.213413,
+    latitude: 36.123091,
+    angle: 35,
+    lanes: ["←↑", "→"],
+    comments: [""],
+  },
+  {
     label: "県道228号 中田町",
     longitude: 139.7106832,
     latitude: 36.1472875,
