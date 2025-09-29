@@ -242,6 +242,22 @@ const 茨城 = [
     comments: ["利根川を渡って地平に降りる途中で1車線になる。"],
   },
   {
+    label: "国道6号 下り 那珂・笠松",
+    longitude: 140.53891,
+    latitude: 36.461552,
+    angle: 30,
+    merge: "right",
+    comments: [""],
+  },
+  {
+    label: "国道6号 水戸バイパス 上り",
+    longitude: 140.434443,
+    latitude: 36.303945,
+    angle: 220,
+    merge: "left",
+    comments: [""],
+  },
+  {
     label: "国道6号 土浦バイパス 上り バイパス終点",
     longitude: 140.17709,
     latitude: 36.058114,

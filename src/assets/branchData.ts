@@ -160,6 +160,25 @@ const 福島 = [] satisfies BranchPoint[];
 
 const 茨城 = [
   {
+    label: "国道349号 下り 瑞龍",
+    longitude: 140.533604,
+    latitude: 36.555902,
+    angle: 5,
+    lanes: ["←", "↑"],
+    comments: [""],
+  },
+  {
+    label: "国道349号 上り 万世橋南",
+    longitude: 140.471558,
+    latitude: 36.385666,
+    angle: 215,
+    lanes: ["↖", "↑"],
+    comments: [
+      "右車線で直進すると水戸市街地へ。",
+      "左車線の側道からトンネルを抜けると、水戸市街地をパスできる。",
+    ],
+  },
+  {
     label: "国道6号 千代田石岡バイパス 下り 中貫工業団地入口",
     longitude: 140.213413,
     latitude: 36.123091,
