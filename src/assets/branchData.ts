@@ -187,6 +187,22 @@ const 茨城 = [
     comments: [""],
   },
   {
+    label: "県道255号 スタジアム北",
+    longitude: 140.645184,
+    latitude: 35.996454,
+    angle: 275,
+    lanes: ["←", "↑→"],
+    comments: ["交差点の手前で右1車線に絞り込まれるが、左車線から直進して左折可。"],
+  },
+  {
+    label: "国道124号 下り 鹿嶋消防署南",
+    longitude: 140.637443,
+    latitude: 35.97991,
+    angle: 320,
+    lanes: ["←", "↑→"],
+    comments: [""],
+  },
+  {
     label: "県道228号 中田町",
     longitude: 139.7106832,
     latitude: 36.1472875,

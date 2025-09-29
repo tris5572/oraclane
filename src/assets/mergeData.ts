@@ -302,6 +302,22 @@ const 茨城 = [
     ],
   },
   {
+    label: "国道51号 上り 夏海バイパス",
+    longitude: 140.555753,
+    latitude: 36.262771,
+    angle: 200,
+    merge: "left",
+    comments: [""],
+  },
+  {
+    label: "国道51号 下り スタジアム北",
+    longitude: 140.643001,
+    latitude: 35.997498,
+    angle: 10,
+    merge: "left",
+    comments: ["スタジアムを過ぎてすぐ、左1車線になる。"],
+  },
+  {
     label: "県道56号 中田町",
     longitude: 139.71255,
     latitude: 36.147047,
