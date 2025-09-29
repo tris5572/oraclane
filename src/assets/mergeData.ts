@@ -242,6 +242,22 @@ const 茨城 = [
     comments: ["利根川を渡って地平に降りる途中で1車線になる。"],
   },
   {
+    label: "国道6号 下り 日立南太田IC",
+    longitude: 140.576441,
+    latitude: 36.503453,
+    angle: 45,
+    merge: "right",
+    comments: ["ICへの入口の分岐後、右1車線になる。"],
+  },
+  {
+    label: "国道6号 上り 石神外宿",
+    longitude: 140.564078,
+    latitude: 36.486461,
+    angle: 210,
+    merge: "right",
+    comments: [""],
+  },
+  {
     label: "国道6号 下り 那珂・笠松",
     longitude: 140.53891,
     latitude: 36.461552,
