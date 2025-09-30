@@ -333,6 +333,14 @@ const 埼玉 = [
     ],
   },
   {
+    label: "国道299号 飯能狭山バイパス 下り",
+    longitude: 139.337566,
+    latitude: 35.858642,
+    angle: 275,
+    lanes: ["←↑", "→"],
+    comments: [""],
+  },
+  {
     label: "県道34号 第二産業道路 上り 鳩ヶ谷",
     longitude: 139.7332701,
     latitude: 35.8305769,
