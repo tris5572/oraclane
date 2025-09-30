@@ -841,6 +841,14 @@ const 静岡 = [
     merge: "left",
     comments: ["道の駅ふじおやまを過ぎ、菅沼交差点の先で1車線になる。"],
   },
+  {
+    label: "国道1号 上り 箱根峠",
+    longitude: 139.01462,
+    latitude: 35.178102,
+    angle: 310,
+    merge: "right",
+    comments: ["下からずっと続く2車線が、箱根峠の手前で終わる。"],
+  },
 ] satisfies MergePoint[];
 
 const 愛知 = [] satisfies MergePoint[];

@@ -668,6 +668,14 @@ const 神奈川 = [
     ],
   },
   {
+    label: "国道1号 下り 小田原箱根道路",
+    longitude: 139.120919,
+    latitude: 35.238044,
+    angle: 230,
+    lanes: ["↖", "↑"],
+    comments: ["左車線は箱根新道。"],
+  },
+  {
     label: "尻手黒川道路 東名川崎の入口",
     longitude: 139.5688722,
     latitude: 35.588265,
