@@ -373,6 +373,22 @@ const 群馬 = [
     merge: "left",
     comments: ["関越道をくぐった先、左の1車線に絞り込まれる。"],
   },
+  {
+    label: "県道69号 笠懸町鹿",
+    longitude: 139.268553,
+    latitude: 36.389338,
+    angle: 0,
+    merge: "right",
+    comments: [""],
+  },
+  {
+    label: "県道315号 大久保東",
+    longitude: 139.280772,
+    latitude: 36.344357,
+    angle: 180,
+    merge: "right",
+    comments: [""],
+  },
 ] satisfies MergePoint[];
 
 const 埼玉 = [
