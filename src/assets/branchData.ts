@@ -160,6 +160,49 @@ const 福島 = [] satisfies BranchPoint[];
 
 const 茨城 = [
   {
+    label: "国道349号 下り 瑞龍",
+    longitude: 140.533604,
+    latitude: 36.555902,
+    angle: 5,
+    lanes: ["←", "↑"],
+    comments: [""],
+  },
+  {
+    label: "国道349号 上り 万世橋南",
+    longitude: 140.471558,
+    latitude: 36.385666,
+    angle: 215,
+    lanes: ["↖", "↑"],
+    comments: [
+      "右車線で直進すると水戸市街地へ。",
+      "左車線の側道からトンネルを抜けると、水戸市街地をパスできる。",
+    ],
+  },
+  {
+    label: "国道6号 千代田石岡バイパス 下り 中貫工業団地入口",
+    longitude: 140.213413,
+    latitude: 36.123091,
+    angle: 35,
+    lanes: ["←↑", "→"],
+    comments: [""],
+  },
+  {
+    label: "県道255号 スタジアム北",
+    longitude: 140.645184,
+    latitude: 35.996454,
+    angle: 275,
+    lanes: ["←", "↑→"],
+    comments: ["交差点の手前で右1車線に絞り込まれるが、左車線から直進して左折可。"],
+  },
+  {
+    label: "国道124号 下り 鹿嶋消防署南",
+    longitude: 140.637443,
+    latitude: 35.97991,
+    angle: 320,
+    lanes: ["←", "↑→"],
+    comments: [""],
+  },
+  {
     label: "県道228号 中田町",
     longitude: 139.7106832,
     latitude: 36.1472875,
@@ -174,7 +217,27 @@ const 茨城 = [
 
 const 栃木 = [] satisfies BranchPoint[];
 
-const 群馬 = [] satisfies BranchPoint[];
+const 群馬 = [
+  {
+    label: "国道18号 上り 君が代橋",
+    longitude: 138.9873773,
+    latitude: 36.3321278,
+    angle: 60,
+    lanes: ["↖", "↗"],
+    comments: [
+      "右車線は国道17号上り東京方面。",
+      "左車線は橋上で2車線になり、左が国道17号下り前橋・新潟方面、右が直進で高崎市街方面。",
+    ],
+  },
+  {
+    label: "国道254号 下り 富岡",
+    longitude: 138.8597685,
+    latitude: 36.2485389,
+    angle: 205,
+    lanes: ["↑", "→"],
+    comments: [""],
+  },
+] satisfies BranchPoint[];
 
 const 埼玉 = [
   {
@@ -259,6 +322,41 @@ const 埼玉 = [
     ],
   },
   {
+    label: "国道140号 彩甲斐街道 下り 皆野寄居有料道路分岐",
+    longitude: 139.17629,
+    latitude: 36.119197,
+    angle: 260,
+    lanes: ["↖", "↑"],
+    comments: [
+      "左車線は川沿いの国道で少し遠回り。",
+      "右車線は皆野寄居有料道路（バイパス）で、トンネルによりショートカット。",
+    ],
+  },
+  {
+    label: "国道254号 嵐山バイパス 下り 志賀",
+    longitude: 139.304336,
+    latitude: 36.052229,
+    angle: 300,
+    lanes: ["←", "↑"],
+    comments: ["右車線が直進で、小川バイパスを経由して寄居方面。", "左車線は東秩父・小川町。"],
+  },
+  {
+    label: "県道47号 東松山IC",
+    longitude: 139.384677,
+    latitude: 36.032881,
+    angle: 180,
+    lanes: ["↖", "↑"],
+    comments: ["右車線は関越道 東松山IC。", "一般道は左車線。"],
+  },
+  {
+    label: "国道407号 上り 新宿小(南)",
+    longitude: 139.420216,
+    latitude: 36.030332,
+    angle: 150,
+    lanes: ["↑", "→"],
+    comments: ["左車線が直進レーン。", "右車線は2車線の右折レーンになる。"],
+  },
+  {
     label: "国道463号 所沢入間バイパス 下り 国道16号手前",
     longitude: 139.3835905,
     latitude: 35.8222924,
@@ -268,6 +366,14 @@ const 埼玉 = [
       "右車線が国道463号直進でアンダーパスをくぐって飯能・秩父方面。",
       "左車線が側道から小谷田交差点で国道16号と交差。",
     ],
+  },
+  {
+    label: "国道299号 飯能狭山バイパス 下り",
+    longitude: 139.337566,
+    latitude: 35.858642,
+    angle: 275,
+    lanes: ["←↑", "→"],
+    comments: [""],
   },
   {
     label: "県道34号 第二産業道路 上り 鳩ヶ谷",
@@ -291,9 +397,33 @@ const 埼玉 = [
       "左車線が側道から国道122号岩槻街道。",
     ],
   },
+  {
+    label: "県道67号 上り 三郷IC出口(西)",
+    longitude: 139.8520625,
+    latitude: 35.8440439,
+    angle: 180,
+    lanes: ["←", "↑→"],
+    comments: ["左折専用レーン。"],
+  },
+  {
+    label: "県道54号 松戸草加線 鷹野小学校前",
+    longitude: 139.8764706,
+    latitude: 35.8023753,
+    angle: 90,
+    lanes: ["←", "↑→"],
+    comments: ["左折専用レーン。", "直進後、右→左のクランクになっているので速度注意。"],
+  },
 ] satisfies BranchPoint[];
 
 const 千葉 = [
+  {
+    label: "県道5号 松戸野田線 下り 流山IC",
+    longitude: 139.9027991,
+    latitude: 35.8816276,
+    angle: 340,
+    lanes: ["←", "↑"],
+    comments: [""],
+  },
   {
     label: "国道14号 下り 千葉市役所",
     longitude: 140.1014408,
@@ -573,6 +703,14 @@ const 神奈川 = [
     ],
   },
   {
+    label: "国道1号 下り 小田原箱根道路",
+    longitude: 139.120919,
+    latitude: 35.238044,
+    angle: 230,
+    lanes: ["↖", "↑"],
+    comments: ["左車線は箱根新道。"],
+  },
+  {
     label: "尻手黒川道路 東名川崎の入口",
     longitude: 139.5688722,
     latitude: 35.588265,
@@ -624,7 +762,43 @@ const 福井 = [] satisfies BranchPoint[];
 
 const 山梨 = [] satisfies BranchPoint[];
 
-const 長野 = [] satisfies BranchPoint[];
+const 長野 = [
+  {
+    label: "国道254号 上り 中込",
+    longitude: 138.475408,
+    latitude: 36.2315278,
+    angle: 45,
+    lanes: ["↑", "→"],
+    comments: [""],
+  },
+  {
+    label: "国道254号 下り 野沢本町",
+    longitude: 138.4668034,
+    latitude: 36.2262995,
+    angle: 245,
+    lanes: ["↑", "→"],
+    comments: ["国道254号 諏訪方面は右車線から右折。"],
+  },
+  {
+    label: "国道142・254号 上り 跡部",
+    longitude: 138.455911,
+    latitude: 36.2322452,
+    angle: 110,
+    lanes: ["←", "↑→"],
+    comments: [
+      "左レーンは交差点を過ぎてすぐ絞り込まれる。",
+      "右車線からの右折レーンは2車線生える。",
+    ],
+  },
+  {
+    label: "国道18号 上り 粟佐北",
+    longitude: 138.123091,
+    latitude: 36.541394,
+    angle: 210,
+    lanes: ["↑", "→"],
+    comments: [""],
+  },
+] satisfies BranchPoint[];
 
 const 岐阜 = [] satisfies BranchPoint[];
 
