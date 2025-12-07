@@ -5,21 +5,30 @@ import {
   NavigationControl,
   Map as ReactMap,
   ScaleControl,
-  type StyleSpecification,
 } from "react-map-gl/maplibre";
 import "maplibre-gl/dist/maplibre-gl.css";
 import { useAtom } from "jotai";
-import { useMemo } from "react";
+import { useCallback, useMemo, useState } from "react";
 import { BRANCH_DATA } from "../assets/branchData";
 import { MERGE_DATA } from "../assets/mergeData";
-import styleJson from "../assets/style.json";
 import { selectedPointDataAtom } from "../atoms/app";
 import { isEqualPointData } from "../utils/utils";
 import { BranchPin } from "./BranchPin";
 import { MergePin } from "./MergePin";
 
+/** 地図スタイルのデータのリスト */
+const STYLES = [
+  { name: "Dark", json: "https://tris5572.github.io/map-style/dark/style.json" },
+  { name: "Light", json: "https://tris5572.github.io/map-style/light/style.json" },
+];
+
 export function MapView() {
   const [selectedData, setSelectedData] = useAtom(selectedPointDataAtom);
+  const [selectedStyleIndex, setSelectedStyleIndex] = useState<number>(0);
+
+  const handleStyleChange = useCallback((index: number) => {
+    setSelectedStyleIndex(index);
+  }, []);
 
   const mergeMarkers = useMemo(
     () =>
@@ -72,15 +81,50 @@ export function MapView() {
         longitude: 139.6499634,
         zoom: 11,
       }}
-      mapStyle={styleJson as StyleSpecification}
+      mapStyle={STYLES[selectedStyleIndex].json}
       attributionControl={false}
     >
       {mergeMarkers}
       {branchMarkers}
+      <MapStyleSwitcher styleIndex={selectedStyleIndex} handleStyleChange={handleStyleChange} />
       <ScaleControl />
       <NavigationControl />
       <FullscreenControl />
       <GeolocateControl />
     </ReactMap>
+  );
+}
+
+/**
+ * 地図スタイルの切替ボタンを表示するコンポーネント
+ */
+function MapStyleSwitcher(props: {
+  styleIndex: number;
+  handleStyleChange: (index: number) => void;
+}) {
+  const handleClick = useCallback(
+    (index: number) => {
+      props.handleStyleChange(index);
+    },
+    [props.handleStyleChange],
+  );
+
+  return (
+    <div className="style-switcher">
+      <div className="button-wrapper">
+        {STYLES.map((st, i) => (
+          <button
+            key={st.name}
+            type="submit"
+            className={i === props.styleIndex ? "selected" : undefined}
+            onClick={() => {
+              handleClick(i);
+            }}
+          >
+            {st.name}
+          </button>
+        ))}
+      </div>
+    </div>
   );
 }
