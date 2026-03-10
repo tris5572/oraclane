@@ -709,6 +709,22 @@ const 千葉 = [
     merge: "right",
     comments: [""],
   },
+  {
+    label: "国道127号 館山バイパス",
+    longitude: 139.861179,
+    latitude: 35.029201,
+    angle: 320,
+    merge: "left",
+    comments: [""],
+  },
+  {
+    label: "国道410号 館山バイパス 南総文化ホール",
+    longitude: 139.873222,
+    latitude: 34.989931,
+    angle: 190,
+    merge: "right",
+    comments: [""],
+  },
 ] satisfies MergePoint[];
 
 const 東京 = [
