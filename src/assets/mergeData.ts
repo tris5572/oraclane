@@ -693,6 +693,14 @@ const 千葉 = [
     merge: "left",
     comments: [""],
   },
+  {
+    label: "国道128号 上り 大網白里",
+    longitude: 140.322118,
+    latitude: 35.513449,
+    angle: 205,
+    merge: "left",
+    comments: [""],
+  },
 ] satisfies MergePoint[];
 
 const 東京 = [

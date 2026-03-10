@@ -521,6 +521,14 @@ const 千葉 = [
       "右車線は直進後に右直角カーブして、京葉道路とその側道への分岐。",
     ],
   },
+  {
+    label: "国道128号 上り 大網白里・経田",
+    longitude: 140.329465,
+    latitude: 35.526235,
+    angle: 20,
+    lanes: ["←", "↑"],
+    comments: ["左車線は千葉方面への左折のみ。"],
+  },
 ] satisfies BranchPoint[];
 
 const 東京 = [
