@@ -295,6 +295,14 @@ const 埼玉 = [
     comments: ["左車線はさいたま方面の左折。", "右車線は加須方面の直進。"],
   },
   {
+    label: "県道152号 権現堂桜堤",
+    longitude: 139.719883,
+    latitude: 36.09282,
+    angle: 100,
+    lanes: ["←", "↑→"],
+    comments: [""],
+  },
+  {
     label: "国道17号 上り 吉野町",
     longitude: 139.608247,
     latitude: 35.9531345,

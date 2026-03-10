@@ -393,6 +393,14 @@ const 群馬 = [
 
 const 埼玉 = [
   {
+    label: "国道4号 上り 権現堂講演",
+    longitude: 139.723324,
+    latitude: 36.103383,
+    angle: 180,
+    merge: "left",
+    comments: [""],
+  },
+  {
     label: "国道17号 上尾道路 下り 桶川北本IC",
     longitude: 139.5216197,
     latitude: 35.9977268,
