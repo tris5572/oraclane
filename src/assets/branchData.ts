@@ -502,6 +502,25 @@ const 千葉 = [
     lanes: ["↖", "↑", "↑"],
     comments: ["左車線は側道。"],
   },
+  {
+    label: "海浜大通りの入口",
+    longitude: 140.071554,
+    latitude: 35.61231,
+    angle: 220,
+    lanes: ["↑", "→"],
+    comments: ["右車線は右折2車線になる。", "左車線は工場地帯で行き止まり。"],
+  },
+  {
+    label: "国道51号 上り 貝塚",
+    longitude: 140.145956,
+    latitude: 35.623673,
+    angle: 230,
+    lanes: ["←", "↑←"],
+    comments: [
+      "左車線は左折のみで千葉市街方面。",
+      "右車線は直進後に右直角カーブして、京葉道路とその側道への分岐。",
+    ],
+  },
 ] satisfies BranchPoint[];
 
 const 東京 = [
