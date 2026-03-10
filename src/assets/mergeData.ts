@@ -669,6 +669,14 @@ const 千葉 = [
     multi: true,
     comments: ["ハーバーシティ方面の右折2車線の先、京葉線をくぐる手前で左側2車線に減少する。"],
   },
+  {
+    label: "国道51号 下り 四街道",
+    longitude: 140.180977,
+    latitude: 35.643948,
+    angle: 40,
+    merge: "left",
+    comments: [""],
+  },
 ] satisfies MergePoint[];
 
 const 東京 = [
