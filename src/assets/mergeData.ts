@@ -677,6 +677,22 @@ const 千葉 = [
     merge: "left",
     comments: [""],
   },
+  {
+    label: "国道126号 飯岡バイパス入口",
+    longitude: 140.682538,
+    latitude: 35.720993,
+    angle: 240,
+    merge: "left",
+    comments: ["すぐに右折レーンがあるが、ガードがあるため右車線からの直接進入は不可。"],
+  },
+  {
+    label: "国道126号 飯岡バイパス東口",
+    longitude: 140.734636,
+    latitude: 35.699572,
+    angle: 90,
+    merge: "left",
+    comments: [""],
+  },
 ] satisfies MergePoint[];
 
 const 東京 = [
