@@ -701,6 +701,14 @@ const 千葉 = [
     merge: "left",
     comments: [""],
   },
+  {
+    label: "国道128号 下り 茂原・法目",
+    longitude: 140.311174,
+    latitude: 35.47764,
+    angle: 30,
+    merge: "right",
+    comments: [""],
+  },
 ] satisfies MergePoint[];
 
 const 東京 = [

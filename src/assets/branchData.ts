@@ -529,6 +529,14 @@ const 千葉 = [
     lanes: ["←", "↑"],
     comments: ["左車線は千葉方面への左折のみ。"],
   },
+  {
+    label: "国道128号 上り 茂原",
+    longitude: 140.287489,
+    latitude: 35.42512,
+    angle: 180,
+    lanes: ["←", "↑→"],
+    comments: ["左車線は一宮方面への左折のみ。"],
+  },
 ] satisfies BranchPoint[];
 
 const 東京 = [
