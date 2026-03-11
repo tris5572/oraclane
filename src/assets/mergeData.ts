@@ -678,6 +678,14 @@ const 千葉 = [
     comments: ["セブンとローソンがある左カーブの交差点を過ぎた先。"],
   },
   {
+    label: "県道90号 新井",
+    longitude: 139.82551,
+    latitude: 35.316761,
+    angle: 160,
+    merge: "right",
+    comments: [""],
+  },
+  {
     label: "国道51号 下り 四街道",
     longitude: 140.180977,
     latitude: 35.643948,
