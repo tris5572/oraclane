@@ -487,6 +487,22 @@ const 千葉 = [
     comments: [""],
   },
   {
+    label: "県道106号 千代田交差点",
+    longitude: 140.401686,
+    latitude: 35.747957,
+    angle: 330,
+    lanes: ["←", "↑→"],
+    comments: ["左車線は空港第6ゲート。"],
+  },
+  {
+    label: "県道62号 岩山",
+    longitude: 140.400993,
+    latitude: 35.735576,
+    angle: 150,
+    lanes: ["←↑", "→"],
+    comments: [""],
+  },
+  {
     label: "国道14号 下り 千葉市役所",
     longitude: 140.1014408,
     latitude: 35.6155297,
