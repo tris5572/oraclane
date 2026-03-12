@@ -670,6 +670,22 @@ const 千葉 = [
     comments: ["ハーバーシティ方面の右折2車線の先、京葉線をくぐる手前で左側2車線に減少する。"],
   },
   {
+    label: "辰巳通り 若宮団地入口",
+    longitude: 140.129845,
+    latitude: 35.522402,
+    angle: 110,
+    merge: "right",
+    comments: [""],
+  },
+  {
+    label: "市原バイパス 新生十字路",
+    longitude: 140.108539,
+    latitude: 35.471589,
+    angle: 180,
+    merge: "right",
+    comments: ["道の駅の手前で1車線になる。"],
+  },
+  {
     label: "国道127号 下り 君津",
     longitude: 139.916151,
     latitude: 35.30407,
