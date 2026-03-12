@@ -527,6 +527,14 @@ const 千葉 = [
     comments: ["右車線は右折2車線になる。", "左車線は工場地帯で行き止まり。"],
   },
   {
+    label: "千葉市中央区赤井",
+    longitude: 140.168636,
+    latitude: 35.574772,
+    angle: 30,
+    lanes: ["←", "↑→"],
+    comments: [""],
+  },
+  {
     label: "国道297号 市原埠頭入口",
     longitude: 140.112492,
     latitude: 35.534552,

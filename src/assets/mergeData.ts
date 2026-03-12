@@ -661,6 +661,22 @@ const 千葉 = [
     comments: ["現在の終点近くで1車線になる。"],
   },
   {
+    label: "県道14号 中西町",
+    longitude: 140.157509,
+    latitude: 35.539777,
+    angle: 160,
+    merge: "left",
+    comments: [""],
+  },
+  {
+    label: "瓦窯通り 市原潤井戸",
+    longitude: 140.164243,
+    latitude: 35.516922,
+    angle: 210,
+    merge: "left",
+    comments: ["すぐ先が直角カーブ。"],
+  },
+  {
     label: "国道357号 下り 蘇我",
     longitude: 140.1208279,
     latitude: 35.5934316,
