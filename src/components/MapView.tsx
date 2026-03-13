@@ -95,7 +95,7 @@ function MapStyleSwitcher(props: { styleIndex: number; handleStyleChange: (index
     (index: number) => {
       props.handleStyleChange(index);
     },
-    [props.handleStyleChange],
+    [props],
   );
 
   return (
