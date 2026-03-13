@@ -46,7 +46,8 @@ https://tris5572.github.io/oraclane/
 - [React](https://react.dev/) - フレームワーク
 - [MapLibre GL JS](https://maplibre.org/) - 地図描画
 - [Jotai](https://jotai.org/) - 状態管理
-- [Biome](https://biomejs.dev/) - コードフォーマット・静的解析
+- [Oxfmt](https://oxc.rs/docs/guide/usage/formatter.html) - コードフォーマット
+- [Oxlint](https://oxc.rs/docs/guide/usage/linter.html) - コード静的解析
 - [Vite](https://vitejs.dev/) - ビルドツール
 - [pnpm](https://pnpm.io/) - パッケージマネージャー
 
