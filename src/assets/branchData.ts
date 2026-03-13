@@ -589,6 +589,22 @@ const 東京 = [
     comments: ["右側2車線が国道4号 上野方面。左側2車線は南千住・浅草方面。"],
   },
   {
+    label: "国道6号 下り 中川大橋東",
+    longitude: 139.858653,
+    latitude: 35.759894,
+    angle: 50,
+    lanes: ["←", "↑", "↑→"],
+    comments: [""],
+  },
+  {
+    label: "国道6号 上り 更生橋",
+    longitude: 139.826702,
+    latitude: 35.728418,
+    angle: 220,
+    lanes: ["←", "↑"],
+    comments: ["新四ツ木橋を渡った先。"],
+  },
+  {
     label: "国道17号 上り 千石",
     longitude: 139.7448546,
     latitude: 35.7280411,
