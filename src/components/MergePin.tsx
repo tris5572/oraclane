@@ -40,16 +40,8 @@ export function MergePin({ data, size = 40, onlyFront }: Props) {
       )}
       {/* 外側線 */}
       <g fill="none" stroke="hsl(0, 0%, 0%)" strokeWidth="4">
-        {data.merge === "right" ? (
-          <path d="M35,75 L35,55 L48,45 L48,25" />
-        ) : (
-          <path d="M35,75 L35,25" />
-        )}
-        {data.merge === "left" ? (
-          <path d="M65,75 L65,55 L52,45 L52,25" />
-        ) : (
-          <path d="M65,75 L65,25" />
-        )}
+        {data.merge === "right" ? <path d="M35,75 L35,55 L48,45 L48,25" /> : <path d="M35,75 L35,25" />}
+        {data.merge === "left" ? <path d="M65,75 L65,55 L52,45 L52,25" /> : <path d="M65,75 L65,25" />}
       </g>
       {/* 内側線 */}
       <g fill="none" stroke="hsl(58, 50%, 40%)" strokeWidth="3">
