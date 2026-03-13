@@ -6,9 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
-    "lint": "biome lint",
-    "check": "biome check",
-    "fix": "biome check --write",
+    "lint": "oxlint --type-aware",
+    "fix": "oxlint --fix",
     "fmt": "oxfmt",
     "preview": "vite preview"
   },
@@ -26,6 +25,8 @@
     "@vitejs/plugin-react": "^4.5.2",
     "globals": "^16.2.0",
     "oxfmt": "^0.40.0",
+    "oxlint": "^1.55.0",
+    "oxlint-tsgolint": "^0.16.0",
     "typescript": "~5.8.3",
     "vite": "^6.3.5"
   }
