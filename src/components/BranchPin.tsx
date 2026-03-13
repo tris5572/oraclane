@@ -72,11 +72,7 @@ function lanesPath(lanes: BranchPoint["lanes"]) {
     <>
       <path d="M0,-25 l0,50" stroke="hsl(0, 0%, 100%)" strokeWidth={4} /> {/* 左端の線 */}
       {lanes.map((lane, index) => (
-        <g
-          // biome-ignore lint/suspicious/noArrayIndexKey: 静的データを元にしていてインデックスが変化することはないため問題ない
-          key={`${lane}-${index}`}
-          transform={`translate(${LANE_WIDTH / 2 + index * LANE_WIDTH})`}
-        >
+        <g key={`${lane}-${index}`} transform={`translate(${LANE_WIDTH / 2 + index * LANE_WIDTH})`}>
           {arrowPath(lane)}
           {/* 車線間の線。最後は右端なので太くする */}
           <path
