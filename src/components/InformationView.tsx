@@ -12,9 +12,7 @@ export function InformationView() {
   const data = useAtomValue(selectedPointDataAtom);
 
   return (
-    <div className="information-view">
-      {!data ? "地点を選択すると情報が表示されます" : <DataInner data={data} />}
-    </div>
+    <div className="information-view">{!data ? "地点を選択すると情報が表示されます" : <DataInner data={data} />}</div>
   );
 }
 

@@ -56,7 +56,7 @@ CI/CD は GitHub Actions で構築しており、アプリ自体を GitHub Pages
 
 ```sh
 # ローカル実行
-pnpm dev # または pnpm run dev 
+pnpm dev # または pnpm run dev
 # lint
 pnpm check
 # lint - 修正

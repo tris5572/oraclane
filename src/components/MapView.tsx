@@ -39,11 +39,7 @@ export function MapView() {
           latitude={data.latitude}
           anchor="center"
           onClick={() => setSelectedData({ type: "merge", ...data })}
-          className={
-            selectedData && isEqualPointData(selectedData, data)
-              ? "point-marker selected"
-              : "point-marker"
-          }
+          className={selectedData && isEqualPointData(selectedData, data) ? "point-marker selected" : "point-marker"}
           rotation={data.angle}
         >
           <MergePin data={data} />
@@ -61,11 +57,7 @@ export function MapView() {
           latitude={data.latitude}
           anchor="center"
           onClick={() => setSelectedData({ type: "branch", ...data })}
-          className={
-            selectedData && isEqualPointData(selectedData, data)
-              ? "point-marker selected"
-              : "point-marker"
-          }
+          className={selectedData && isEqualPointData(selectedData, data) ? "point-marker selected" : "point-marker"}
           rotation={data.angle}
         >
           <BranchPin data={data} />
@@ -98,10 +90,7 @@ export function MapView() {
 /**
  * 地図スタイルの切替ボタンを表示するコンポーネント
  */
-function MapStyleSwitcher(props: {
-  styleIndex: number;
-  handleStyleChange: (index: number) => void;
-}) {
+function MapStyleSwitcher(props: { styleIndex: number; handleStyleChange: (index: number) => void }) {
   const handleClick = useCallback(
     (index: number) => {
       props.handleStyleChange(index);

@@ -8,10 +8,7 @@ import type { BranchPoint, MergePoint } from "../types/types";
  * 備考: データと、保持された atom の値を比較するとき、string[] は同じ参照なので単純な比較のみで判定可能だが、
  *.     一応汎用性を持たせるためにきちんと中身まで見て判定している。
  */
-export function isEqualPointData(
-  a: BranchPoint | MergePoint,
-  b: BranchPoint | MergePoint,
-): boolean {
+export function isEqualPointData(a: BranchPoint | MergePoint, b: BranchPoint | MergePoint): boolean {
   if (
     a.label === b.label &&
     a.longitude === b.longitude &&

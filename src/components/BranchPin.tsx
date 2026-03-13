@@ -113,15 +113,11 @@ function arrowPath(lane: string, color = "white") {
     }
     if (lane.includes("↖")) {
       array.push(<path d="M-15,-15 L-15,0 L-2,-10 z" key="LT1" />);
-      array.push(
-        <path d="M-8,-5 L0,10 L0,20" fill="none" stroke={color} strokeWidth={4} key="LT2" />,
-      );
+      array.push(<path d="M-8,-5 L0,10 L0,20" fill="none" stroke={color} strokeWidth={4} key="LT2" />);
     }
     if (lane.includes("↗")) {
       array.push(<path d="M15,-15 L15,0 L2,-10 z" key="RT1" />);
-      array.push(
-        <path d="M8,-5 L0,10 L0,20" fill="none" stroke={color} strokeWidth={4} key="RT2" />,
-      );
+      array.push(<path d="M8,-5 L0,10 L0,20" fill="none" stroke={color} strokeWidth={4} key="RT2" />);
     }
   } else {
     // 直進が含まれない場合
@@ -129,29 +125,21 @@ function arrowPath(lane: string, color = "white") {
     if (!lane.includes("↖") && !lane.includes("↗")) {
       if (lane.includes("←")) {
         array.push(<path d="M-10,-20 L-20,-10 L-10,0 z" key="L1" />);
-        array.push(
-          <path d="M-10,-10 l10,0 l0,30" fill="none" stroke={color} strokeWidth={4} key="L2" />,
-        );
+        array.push(<path d="M-10,-10 l10,0 l0,30" fill="none" stroke={color} strokeWidth={4} key="L2" />);
       }
       if (lane.includes("→")) {
         array.push(<path d="M10,-20 L20,-10 L10,0 z" key="R1" />);
-        array.push(
-          <path d="M10,-10 l-10,0 l0,30" fill="none" stroke={color} strokeWidth={4} key="R2" />,
-        );
+        array.push(<path d="M10,-10 l-10,0 l0,30" fill="none" stroke={color} strokeWidth={4} key="R2" />);
       }
     } else {
       // 斜め
       if (lane.includes("↖")) {
         array.push(<path d="M-15,-20 L-15,-5 L-2,-15 z" key="LT1" />);
-        array.push(
-          <path d="M-8,-10 L0,0 l0,20" fill="none" stroke={color} strokeWidth={4} key="LT2" />,
-        );
+        array.push(<path d="M-8,-10 L0,0 l0,20" fill="none" stroke={color} strokeWidth={4} key="LT2" />);
       }
       if (lane.includes("↗")) {
         array.push(<path d="M15,-20 L15,-5 L2,-15 z" key="RT1" />);
-        array.push(
-          <path d="M8,-10 L0,0 l0,20" fill="none" stroke={color} strokeWidth={4} key="RT2" />,
-        );
+        array.push(<path d="M8,-10 L0,0 l0,20" fill="none" stroke={color} strokeWidth={4} key="RT2" />);
       }
 
       // 斜めがある場合は、左右は下側
