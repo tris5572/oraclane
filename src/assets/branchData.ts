@@ -695,6 +695,22 @@ const 東京 = [
     comments: [],
   },
   {
+    label: "外苑東通り 権田原 南行",
+    longitude: 139.720676,
+    latitude: 35.677826,
+    angle: 160,
+    lanes: ["←↑", "↑", "→"],
+    comments: [],
+  },
+  {
+    label: "外苑東通り 権田原 北行",
+    longitude: 139.721251,
+    latitude: 35.676536,
+    angle: 340,
+    lanes: ["←↑", "↑", "→"],
+    comments: [],
+  },
+  {
     label: "国道15号 第一京浜 下り 八ツ山橋",
     longitude: 139.7383073,
     latitude: 35.6252621,
