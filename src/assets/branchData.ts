@@ -581,6 +581,14 @@ const 千葉 = [
 
 const 東京 = [
   {
+    label: "川の手通り 小菅三丁目",
+    longitude: 139.828069,
+    latitude: 35.756417,
+    angle: 20,
+    lanes: ["←", "↑"],
+    comments: [""],
+  },
+  {
     label: "川の手通り 堀切五丁目",
     longitude: 139.827943,
     latitude: 35.749628,
