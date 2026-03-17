@@ -581,6 +581,30 @@ const 千葉 = [
 
 const 東京 = [
   {
+    label: "川の手通り 堀切五丁目",
+    longitude: 139.827943,
+    latitude: 35.749628,
+    angle: 200,
+    lanes: ["←", "↑→"],
+    comments: [""],
+  },
+  {
+    label: "平和橋通り 堀切五丁目",
+    longitude: 139.827075,
+    latitude: 35.749615,
+    angle: 130,
+    lanes: ["←", "↑→"],
+    comments: [""],
+  },
+  {
+    label: "川の手通り 堀切菖蒲園駅前",
+    longitude: 139.825724,
+    latitude: 35.747084,
+    angle: 100,
+    lanes: ["←", "↑→"],
+    comments: [""],
+  },
+  {
     label: "国道4号 上り 千住大橋",
     longitude: 139.7981152,
     latitude: 35.7405453,
