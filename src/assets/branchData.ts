@@ -581,6 +581,22 @@ const 千葉 = [
 
 const 東京 = [
   {
+    label: "新大宮バイパス 上り 笹目橋",
+    longitude: 139.644798,
+    latitude: 35.794211,
+    angle: 200,
+    lanes: ["←", "↑", "↑", "→"],
+    comments: ["左車線は次の三園2丁目交差点で左折2車線になる。"],
+  },
+  {
+    label: "新大宮バイパス 上り 三園",
+    longitude: 139.64378,
+    latitude: 35.787675,
+    angle: 160,
+    lanes: ["↖", "↖", "↑"],
+    comments: ["国道17号の直進は右車線のみ。"],
+  },
+  {
     label: "川の手通り 小菅三丁目",
     longitude: 139.828069,
     latitude: 35.756417,
