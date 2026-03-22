@@ -938,7 +938,7 @@ const 山梨 = [
     comments: [""],
   },
   {
-    label: "国道139号 太田和",
+    label: "国道139号 大田和",
     longitude: 138.723464,
     latitude: 35.483067,
     angle: 300,
