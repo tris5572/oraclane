@@ -929,6 +929,14 @@ const 山梨 = [
     merge: "right",
     comments: [""],
   },
+  {
+    label: "国道139号 太田和",
+    longitude: 138.723464,
+    latitude: 35.483067,
+    angle: 300,
+    merge: "left",
+    comments: [""],
+  },
 ] satisfies MergePoint[];
 
 const 長野 = [
