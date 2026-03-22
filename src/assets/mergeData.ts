@@ -922,6 +922,14 @@ const 福井 = [] satisfies MergePoint[];
 
 const 山梨 = [
   {
+    label: "国道20号 甲州街道 韮崎",
+    longitude: 138.459571,
+    latitude: 35.698567,
+    angle: 310,
+    merge: "left",
+    comments: ["ガストの先で1車線になる。"],
+  },
+  {
     label: "国道20号 甲州街道 勝沼",
     longitude: 138.736657,
     latitude: 35.655073,
