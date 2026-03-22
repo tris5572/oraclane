@@ -930,6 +930,14 @@ const 山梨 = [
     comments: [""],
   },
   {
+    label: "国道137号 御坂みち 藤野木",
+    longitude: 138.767715,
+    latitude: 35.57423,
+    angle: 120,
+    merge: "right",
+    comments: ["ドライブイン黒駒の先で、ほぼ登坂車線だった左車線が終わる。"],
+  },
+  {
     label: "県道707号 河口湖大橋手前",
     longitude: 138.756819,
     latitude: 35.502119,
