@@ -938,6 +938,14 @@ const 山梨 = [
     comments: [""],
   },
   {
+    label: "新山梨環状道路 玉穂中央",
+    longitude: 138.545946,
+    latitude: 35.606492,
+    angle: 90,
+    merge: "left",
+    comments: ["玉穂中央ランプの先で1車線になる。"],
+  },
+  {
     label: "国道137号 御坂みち 藤野木",
     longitude: 138.767715,
     latitude: 35.57423,
