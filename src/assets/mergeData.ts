@@ -922,6 +922,14 @@ const 福井 = [] satisfies MergePoint[];
 
 const 山梨 = [
   {
+    label: "県道707号 河口湖大橋手前",
+    longitude: 138.756819,
+    latitude: 35.502119,
+    angle: 30,
+    merge: "left",
+    comments: [""],
+  },
+  {
     label: "国道139号 富士見バイパス北",
     longitude: 138.818404,
     latitude: 35.501542,

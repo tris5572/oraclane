@@ -1117,6 +1117,14 @@ const 山梨 = [
     lanes: ["←", "↑→"],
     comments: [""],
   },
+  {
+    label: "県道707号 東恋路",
+    longitude: 138.756701,
+    latitude: 35.492895,
+    angle: 180,
+    lanes: ["←", "↑→"],
+    comments: [""],
+  },
 ] satisfies BranchPoint[];
 
 const 長野 = [
