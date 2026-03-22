@@ -1108,7 +1108,16 @@ const 石川 = [] satisfies BranchPoint[];
 
 const 福井 = [] satisfies BranchPoint[];
 
-const 山梨 = [] satisfies BranchPoint[];
+const 山梨 = [
+  {
+    label: "国道139号 上宿",
+    longitude: 138.791497,
+    latitude: 35.475306,
+    angle: 130,
+    lanes: ["←", "↑→"],
+    comments: [""],
+  },
+] satisfies BranchPoint[];
 
 const 長野 = [
   {

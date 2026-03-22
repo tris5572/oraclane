@@ -920,7 +920,16 @@ const 石川 = [] satisfies MergePoint[];
 
 const 福井 = [] satisfies MergePoint[];
 
-const 山梨 = [] satisfies MergePoint[];
+const 山梨 = [
+  {
+    label: "国道139号 富士見バイパス北",
+    longitude: 138.818404,
+    latitude: 35.501542,
+    angle: 20,
+    merge: "right",
+    comments: [""],
+  },
+] satisfies MergePoint[];
 
 const 長野 = [
   {
