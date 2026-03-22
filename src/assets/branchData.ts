@@ -1126,6 +1126,14 @@ const 山梨 = [
     comments: ["環状道路は右車線。"],
   },
   {
+    label: "新山梨環状道路 南アルプスIC西",
+    longitude: 138.481379,
+    latitude: 35.613762,
+    angle: 270,
+    lanes: ["←", "↑→"],
+    comments: ["南アルプスIC・コストコの先。"],
+  },
+  {
     label: "国道139号 上宿",
     longitude: 138.791497,
     latitude: 35.475306,
