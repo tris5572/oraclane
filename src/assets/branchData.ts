@@ -1118,6 +1118,14 @@ const 山梨 = [
     comments: [""],
   },
   {
+    label: "甲斐松ノ尾通り 中下条",
+    longitude: 138.525109,
+    latitude: 35.67658,
+    angle: 270,
+    lanes: ["←", "↑→"],
+    comments: [""],
+  },
+  {
     label: "新山梨環状道路 西下条",
     longitude: 138.571217,
     latitude: 35.602471,
