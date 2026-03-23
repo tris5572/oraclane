@@ -1126,6 +1126,14 @@ const 山梨 = [
     comments: [""],
   },
   {
+    label: "国道52号 美術館通り 相生歩道橋",
+    longitude: 138.565925,
+    latitude: 35.658613,
+    angle: 110,
+    lanes: ["←", "↑→"],
+    comments: [""],
+  },
+  {
     label: "甲斐松ノ尾通り 中下条",
     longitude: 138.525109,
     latitude: 35.67658,
