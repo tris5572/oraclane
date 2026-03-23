@@ -1118,6 +1118,14 @@ const 山梨 = [
     comments: [""],
   },
   {
+    label: "県道7号 アルプス通り 総合グランド入口",
+    longitude: 138.558383,
+    latitude: 35.676193,
+    angle: 20,
+    lanes: ["←↑", "→"],
+    comments: [""],
+  },
+  {
     label: "甲斐松ノ尾通り 中下条",
     longitude: 138.525109,
     latitude: 35.67658,
