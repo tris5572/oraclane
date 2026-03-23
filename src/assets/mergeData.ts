@@ -938,6 +938,14 @@ const 山梨 = [
     comments: [""],
   },
   {
+    label: "県道6号 山の手通り 美咲",
+    longitude: 138.562826,
+    latitude: 35.674876,
+    angle: 290,
+    merge: "left",
+    comments: [""],
+  },
+  {
     label: "新山梨環状道路 玉穂中央",
     longitude: 138.545946,
     latitude: 35.606492,

@@ -1110,6 +1110,14 @@ const 福井 = [] satisfies BranchPoint[];
 
 const 山梨 = [
   {
+    label: "県道6号 山の手通り 武田",
+    longitude: 138.570146,
+    latitude: 35.672495,
+    angle: 110,
+    lanes: ["←↑", "→"],
+    comments: [""],
+  },
+  {
     label: "新山梨環状道路 西下条",
     longitude: 138.571217,
     latitude: 35.602471,
