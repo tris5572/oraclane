@@ -954,6 +954,14 @@ const 山梨 = [
     comments: ["DCMの横で1車線になる。"],
   },
   {
+    label: "国道52号 美術館通り 上石田",
+    longitude: 138.552476,
+    latitude: 35.657554,
+    angle: 280,
+    merge: "left",
+    comments: [""],
+  },
+  {
     label: "県道39号 白根IC西の西",
     longitude: 138.468544,
     latitude: 35.638338,
