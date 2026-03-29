@@ -920,7 +920,104 @@ const 石川 = [] satisfies MergePoint[];
 
 const 福井 = [] satisfies MergePoint[];
 
-const 山梨 = [] satisfies MergePoint[];
+const 山梨 = [
+  {
+    label: "国道20号 甲州街道 韮崎",
+    longitude: 138.459571,
+    latitude: 35.698567,
+    angle: 310,
+    merge: "left",
+    comments: ["ガストの先で1車線になる。"],
+  },
+  {
+    label: "国道20号 甲州街道 勝沼",
+    longitude: 138.736657,
+    latitude: 35.655073,
+    angle: 50,
+    merge: "right",
+    comments: [""],
+  },
+  {
+    label: "国道411号 城東バイパス 朝気通り",
+    longitude: 138.581106,
+    latitude: 35.656755,
+    angle: 280,
+    merge: "left",
+    comments: ["バイパスはこの先が工事中。"],
+  },
+  {
+    label: "県道6号 山の手通り 美咲",
+    longitude: 138.562826,
+    latitude: 35.674876,
+    angle: 290,
+    merge: "left",
+    comments: [""],
+  },
+  {
+    label: "やまなみ通り 朝日三丁目",
+    longitude: 138.561924,
+    latitude: 35.670225,
+    angle: 110,
+    merge: "left",
+    comments: ["DCMの横で1車線になる。"],
+  },
+  {
+    label: "国道52号 美術館通り 上石田",
+    longitude: 138.552476,
+    latitude: 35.657554,
+    angle: 280,
+    merge: "left",
+    comments: [""],
+  },
+  {
+    label: "県道39号 白根IC西の西",
+    longitude: 138.468544,
+    latitude: 35.638338,
+    angle: 270,
+    merge: "right",
+    comments: [""],
+  },
+  {
+    label: "新山梨環状道路 玉穂中央",
+    longitude: 138.545946,
+    latitude: 35.606492,
+    angle: 90,
+    merge: "left",
+    comments: ["玉穂中央ランプの先で1車線になる。"],
+  },
+  {
+    label: "国道137号 御坂みち 藤野木",
+    longitude: 138.767715,
+    latitude: 35.57423,
+    angle: 120,
+    merge: "right",
+    comments: ["ドライブイン黒駒の先で、ほぼ登坂車線だった左車線が終わる。"],
+  },
+  {
+    label: "県道707号 河口湖大橋手前",
+    longitude: 138.756819,
+    latitude: 35.502119,
+    angle: 30,
+    merge: "left",
+    comments: [""],
+  },
+  {
+    label: "国道139号 富士見バイパス北",
+    longitude: 138.818404,
+    latitude: 35.501542,
+    angle: 20,
+    merge: "right",
+    comments: [""],
+  },
+  {
+    label: "国道139号 大田和",
+    longitude: 138.723464,
+    latitude: 35.483067,
+    angle: 300,
+    merge: "left",
+    comments: [""],
+  },
+] satisfies MergePoint[];
 
 const 長野 = [
   {

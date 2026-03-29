@@ -1108,7 +1108,80 @@ const 石川 = [] satisfies BranchPoint[];
 
 const 福井 = [] satisfies BranchPoint[];
 
-const 山梨 = [] satisfies BranchPoint[];
+const 山梨 = [
+  {
+    label: "県道6号 山の手通り 武田",
+    longitude: 138.570146,
+    latitude: 35.672495,
+    angle: 110,
+    lanes: ["←↑", "→"],
+    comments: [""],
+  },
+  {
+    label: "県道7号 アルプス通り 総合グランド入口",
+    longitude: 138.558383,
+    latitude: 35.676193,
+    angle: 20,
+    lanes: ["←↑", "→"],
+    comments: [""],
+  },
+  {
+    label: "国道52号 美術館通り 相生歩道橋",
+    longitude: 138.565925,
+    latitude: 35.658613,
+    angle: 110,
+    lanes: ["←", "↑→"],
+    comments: [""],
+  },
+  {
+    label: "甲斐松ノ尾通り 中下条",
+    longitude: 138.525109,
+    latitude: 35.67658,
+    angle: 270,
+    lanes: ["←", "↑→"],
+    comments: [""],
+  },
+  {
+    label: "新山梨環状道路 西下条",
+    longitude: 138.571217,
+    latitude: 35.602471,
+    angle: 90,
+    lanes: ["↖", "↑"],
+    comments: ["環状道路は右車線。"],
+  },
+  {
+    label: "新山梨環状道路 大津町",
+    longitude: 138.560931,
+    latitude: 35.603032,
+    angle: 270,
+    lanes: ["↖", "↑"],
+    comments: ["環状道路は右車線。"],
+  },
+  {
+    label: "新山梨環状道路 南アルプスIC西",
+    longitude: 138.481379,
+    latitude: 35.613762,
+    angle: 270,
+    lanes: ["←", "↑→"],
+    comments: ["南アルプスIC・コストコの先。"],
+  },
+  {
+    label: "国道139号 上宿",
+    longitude: 138.791497,
+    latitude: 35.475306,
+    angle: 130,
+    lanes: ["←", "↑→"],
+    comments: [""],
+  },
+  {
+    label: "県道707号 東恋路",
+    longitude: 138.756701,
+    latitude: 35.492895,
+    angle: 180,
+    lanes: ["←", "↑→"],
+    comments: [""],
+  },
+] satisfies BranchPoint[];
 
 const 長野 = [
   {
