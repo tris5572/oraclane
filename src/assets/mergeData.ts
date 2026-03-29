@@ -938,6 +938,14 @@ const 山梨 = [
     comments: [""],
   },
   {
+    label: "国道411号 城東バイパス 朝気通り",
+    longitude: 138.581106,
+    latitude: 35.656755,
+    angle: 280,
+    merge: "left",
+    comments: ["バイパスはこの先が工事中。"],
+  },
+  {
     label: "県道6号 山の手通り 美咲",
     longitude: 138.562826,
     latitude: 35.674876,
